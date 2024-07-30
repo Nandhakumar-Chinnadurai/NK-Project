@@ -1,0 +1,566 @@
+
+/************ Home Screen Start **********/
+/* Navbar Start */
+.nav-space-gap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: flex-end;
+}
+.navbar{
+  background-color:blanchedalmond;
+}
+.nav-item a:hover {
+  color: orange;
+}
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+.nav-link .active{
+  color: white;
+  background-color: blue;
+}
+@media screen and (max-width:768px) {
+  .modal-content{
+    margin: 0px 45px;
+  }
+}
+/* Navbar End */
+
+/* Bus Background Start */
+.bgbus {
+  background-image: url(./Assets/images/Bg-BusOpacity.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 70px;
+  margin-bottom: 80px;
+  /* opacity: 85%; */
+}
+.centered{
+  padding-top: 90px;
+}
+.search{
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+.search-outer{
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 50px #aaa;
+}
+.search-inner{
+  background-color:white;
+  border-radius: 10px;
+  box-shadow: 0 0 50px #aaa;
+  padding: 8px;
+}
+.sea-gap{
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (min-width:992px) and (max-width:1130px) {
+  .bgbus{
+    margin-top: 99px;
+  }
+}
+@media screen and (min-width:768px) and (max-width:992px) {
+  .bgbus{
+    margin-top: 19px;
+    padding-bottom: 10px;
+  }
+  .centered{
+    padding-top: 118px;
+  }
+  .search{
+    margin-top: 50px;
+  }
+  .search-first,
+  .search-two,
+  .search-three,
+  .search-four,
+  .search-five{
+    padding-top: 8px;
+  }
+}
+@media screen and (min-width:369px) and (max-width:768px) {
+  .bgbus{
+    margin-top: 14px;
+  }
+  .centered{
+    padding-top: 110px;
+  }
+  .search{
+    margin-top: 43px;
+  }
+  .search-first,
+  .search-two,
+  .search-three,
+  .search-four,
+  .search-five{
+    padding-top: 7px;
+  }
+}
+@media screen and (min-width:320px) and (max-width:369px) {
+  .bgbus{
+    margin-top: -1px;
+  }
+  .centered{
+    padding-top: 110px;
+  }
+  .search{
+    margin-top: 55px;
+  }
+  .search-first,
+  .search-two,
+  .search-three,
+  .search-four,
+  .search-five{
+    padding-top: 5px;
+  }
+}
+/* #bgbus {
+  background-image: url(./Assets/images/Bg-BusOpacity.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 45px;
+  opacity: 85%;
+} 
+.centered {
+  padding-top: 150px;
+}
+.search{
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+.search-outer{
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 50px #aaa;
+}
+.search-inner{
+  background-color:white;
+  border-radius: 10px;
+  box-shadow: 0 0 50px #aaa;
+  padding: 10px;
+}
+.search-first,
+.search-two,
+.search-three,
+.search-four,
+.search-five{
+  display: flex;
+  flex-direction: row;
+} */
+/* Bus Background End */
+
+/* Poster Start */
+.poster{
+  margin: 50px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 50px #aaa;
+  background-color:steelblue;
+}
+.poster-blue{
+  background-color:teal;
+  color: white;
+  padding: 10px;
+  border-radius: 25px;
+}
+.poster-combine{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 3px;
+}
+/* .poster-blue, h5{
+  color: #000;
+} */
+.poster-blue h3{
+  color:navy;
+}
+.poster-img-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #aaa;
+}
+.poster-white{
+  padding: 10px;
+}
+.playapp-rou,
+.appstore-rou{
+  border-radius: 8px;
+  width: 200px;
+}
+@media screen and (max-width:1024px) {
+  .poster-white{
+    /* padding: 40px 10px; */
+    display: flex;
+    align-items: center;
+  }
+}
+/* Poster End */
+
+/* Features Start */
+.features{
+  text-align: center;
+  margin: 20px 0px;
+}
+.features-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px;
+  border-radius: 4%;
+  box-shadow: 0 0 20px purple;
+}
+ .features-list-item{
+  justify-content: center;
+}
+.features-img,
+.features-head {
+  justify-content: center;
+  align-self: center;
+}
+/* Features End */
+
+/* Benefits Start */
+.facility-features{
+  text-align: center;
+  margin: 20px 0px;
+}
+.facility-img{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* Benefits End */
+
+/* Amenties Start */
+.title-head-blue{
+  color:darkslateblue;
+}
+.title-head-blue span,
+.features-blue,
+.facility-features h2{
+  color:darkblue;  
+}
+.title-head-center{
+  text-align: center;
+}
+.title-head{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+.align{
+  padding: 100px 5px;
+}
+/* Amenties End */
+
+/* Footer Start */
+.footer-section p,
+.footer-section a,
+.footer-section li a,
+.footernum a,
+.footer-bottom a{
+  color: #000;
+  text-decoration: none;
+  list-style: none;
+}
+.footer-section li a:hover,
+.footer-bottom a:hover,
+.footernum a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+.footer-links{
+  list-style: none;
+}
+.footer-top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  line-height: 2;  
+  padding-top: 30px;
+}
+.footer-section {
+  background-color:blanchedalmond;
+}
+/* Footer End */
+.form-group{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+
+}
+/************* Home Screen End ************/
+
+/************ Track Screen Start **********/
+.trackbus{
+  margin-top: 75px;
+  background-color: slategray;
+  color: white;
+  padding: 2px;
+}
+.trackbus-section{
+  /* background-image: url(./Assets/images/Bg-BusOpacity.jpg); */
+  text-align: center;
+  color:rgb(107, 105, 105);
+}
+.trackbus-form-inner{
+  border-radius: 10px;
+  box-shadow: 0 0 5px #aaa;
+  background-color: rgb(233, 233, 233);
+  padding: 10px;
+}
+.trackbus-form-inner .t-row{
+  display: flex;
+  column-gap: 15px; 
+}
+.trackbus-form-inner .t-row .t-col:not(:last-child)
+{ 
+  flex: 1; 
+}
+@media screen and (max-width:767px) {
+.trackbus-form-inner .t-row{
+  flex-direction: column;
+ row-gap: 15px;
+}
+.trackbus-form-inner .t-row .t-col .btn{
+  width: 100%;
+}
+}
+@media screen and (min-width:768px) and (max-width:1130px) {
+  .trackbus{
+    margin-top: 103px;
+  }
+}
+/*********** Track Screen End ***********/
+
+/*********** Contact Screen Start ***********/
+.search-box{
+  display: flex;
+  flex-direction: row; 
+  justify-content: flex-end;
+  margin: 15px;
+}
+.d-flex{
+  width: 400px;
+}
+.accordion{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.accordion-inside{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+}
+.accordion-inside-single{
+  border-radius: 5px;
+  box-shadow: 0 0 2px #aaa;
+  margin: 35px 8px; 
+}
+/*********** Contact Screen End ***********/
+
+/******* Login Screen Start ********/
+/* .login{ 
+  background-image: url(./Assets/images/Login-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+} */
+.login-inside{
+  background:linear-gradient(rgb(3, 25, 34), blue, rgb(3, 25, 34));
+  color: white;
+  margin: 8% 25%;
+  /* padding: 10px 100px; */
+  text-align: center;
+  box-shadow: 0 0 50px white;
+  border-radius: 20px;
+}
+.icon{
+  padding: 5px;
+  color: gray;
+  text-align: center;
+}
+@media screen and (min-width:0px) and (max-width:321px) {
+  .login-inside {
+    margin: 12% 10%;
+    padding: 0px 28px;
+  } 
+}
+@media screen and (min-width:321px) and (max-width:376px) {
+  .login-inside {
+    margin: 13% 12%;
+    padding: 0px 43px;
+  } 
+}
+@media screen and (min-width:376px) and (max-width:426px) {
+  .login-inside {
+    margin: 15% 10%;
+    padding: 6px 35px;
+  } 
+}
+@media screen and (min-width:426px) and (max-width:769px) {
+  .login-inside {
+    margin: 10% 14%;
+    padding: 6px 70px;
+  } 
+}
+@media screen and (min-width:769px) and (max-width:1441px) {
+  .login-inside {
+    margin: 8% 20%;
+    padding: 6px 100px;
+  } 
+}
+@media screen and (min-width:1441px) and (max-width:2561px) {
+  .login-inside {
+    margin: 8% 20%;
+    padding: 6px 100px;
+  } 
+}
+@media screen and (max-width:2561px) {
+  .login-inside-space{
+    text-align: start;
+  }
+}
+/******** Login Screen End *********/
+
+/****** Signup screen Start *******/
+.signup-inner{
+  background:linear-gradient(rgb(3, 25, 34), blue, rgb(3, 25, 34));
+  color: white;
+  /* padding: 10px 100px; */
+  margin: 8% 25%;
+  text-align: center;
+  box-shadow: 0 0 50px white;
+  border-radius: 20px;
+}
+@media screen and (min-width:0px) and (max-width:321px) {
+  .signup-inner {
+    margin: 12% 10%;
+    padding: 0px 28px;
+  } 
+}
+@media screen and (min-width:321px) and (max-width:376px) {
+  .signup-inner {
+    margin: 13% 12%;
+    padding: 0px 43px;
+  } 
+}
+@media screen and (min-width:376px) and (max-width:426px) {
+  .signup-inner {
+    margin: 15% 10%;
+    padding: 6px 35px;
+  } 
+}
+@media screen and (min-width:426px) and (max-width:769px) {
+  .signup-inner {
+    margin: 10% 14%;
+    padding: 6px 70px;
+  } 
+}
+@media screen and (min-width:769px) and (max-width:2561px) {
+  .signup-inner {
+    margin: 8% 20%;
+    padding: 6px 100px;
+  } 
+}
+
+/****** Signup screen End *******/
+
+/****** Manage Screen Start *******/
+.manage-outer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.manage-inner{
+  padding: 50px 50px;
+}
+.butt-on{
+ width: 100%;
+}
+@media screen and (max-width:767px) {
+  .manage-split{
+    flex-direction: column;
+  }
+}
+/****** Manage screen End *******/
+
+/****** Booking screen Start *******/
+.book{
+  margin-top: 70px;
+  margin-bottom: 20px;
+  /* background-color: lightgrey; */
+}
+.filter{
+  background-color: blueviolet;
+}
+.filter-left{
+  /* padding:16px 20px; */
+  background-color:lightgrey;
+}
+.fil-body{
+  padding: 16px;
+}
+.text-right{
+  text-align: right;
+  text-decoration: none;
+  color: #007bff;
+}
+.filter-right{
+  background-color:rgb(203, 203, 203);
+}
+.comm{
+  /* background-color: lightgrey; */
+  /* border-radius: 5px; */
+}
+.comm-1{
+  /* display: flex;
+  flex-direction: row;
+  justify-content: stretch; */
+  /* border-radius: 15px;  */
+}
+.book-head{
+  margin-top: 15px;
+  background-color: slategray;
+  color: white;
+}
+.book-head-break{
+  display: flex;
+  justify-content: space-around;
+}
+.trip-Information{
+  margin-top: 10px;
+}
+.bus-info{
+  /* margin-top: 25px; */
+}
+ .bus-sec,
+ .bus-rou{
+  display: flex;
+ }
+.left-align{
+  text-align: left;
+}
+.right-align{
+  text-align: right;
+}
+.center-align{
+  text-align: center;
+}
+.offer-ribbon{
+  background-color: rgb(190, 17, 17);
+  color: white;
+  width: 180px;
+}
+
+/****** Booking screen End *******/
