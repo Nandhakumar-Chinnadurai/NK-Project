@@ -268,7 +268,8 @@
 .footer-section a,
 .footer-section li a,
 .footernum a,
-.footer-bottom a{
+.footer-bottom a,
+.search-button-link a{
   color: #000;
   text-decoration: none;
   list-style: none;
@@ -544,9 +545,13 @@
 .bus-info{
   /* margin-top: 25px; */
 }
- .bus-sec,
- .bus-rou{
+ .bus-sec{
   display: flex;
+ }
+ .bus-dis,
+ .bus-display{
+  display: flex;
+  justify-content:end;
  }
 .left-align{
   text-align: left;
@@ -561,6 +566,30 @@
   background-color: rgb(190, 17, 17);
   color: white;
   width: 180px;
+}
+.butt-colors{
+  background-color: #1a038d;
+}
+.butt-hide a{
+  text-decoration: none;
+  color: white;
+}
+.butt-hidd a,
+.butt-hidd-1 a,
+.butt-hidd-2 a,
+.butt-hidd-3 a,
+.butt-hidd-4 a{
+  text-decoration: none;
+  color: #000;
+}
+.butt-hidd-3 a:hover,
+.butt-hidd-4 a:hover{
+  text-decoration: none;
+  color: #000;
+}
+.txt-dot{
+  border-bottom: 1px dashed #999;
+  text-decoration: none; 
 }
 
 /****** Booking screen End *******/
