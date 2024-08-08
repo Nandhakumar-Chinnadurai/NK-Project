@@ -591,5 +591,48 @@
   border-bottom: 1px dashed #999;
   text-decoration: none; 
 }
+/* .hide-seats-select{
+  background-color: #007bff;
+} */
+ .seat-select-container{
+  display: inline-block;
+  min-width: max-content;
+  overflow: auto;
+  user-select: none;
+ }
+.upper-seat{
+  width: max-content;
+  border: 1px solid #E8E8E8;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-left: 20px;
+
+}
+.d-flex{
+  text-align: center;
+}
+.upp-seat-cho{
+  display: flex;
+  justify-content: space-between;
+
+}
+.lower-seat{
+  background-color: blueviolet;
+
+}
+ .hide-seats-box{
+  padding-top: 10px;
+  padding-bottom: 3px;
+ }
+.vertical-txt{
+  transform: rotate(90deg);
+  transform-origin: left top 0;
+}
+.seat-lay{
+  width: 54px;
+  height: 21px;
+  line-height: 19px;
+  background-color:white;
+}
 
 /****** Booking screen End *******/
