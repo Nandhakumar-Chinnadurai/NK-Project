@@ -599,13 +599,16 @@
   overflow: auto;
   padding-top: 15px;
 }
-.upper-seat{
+.upper-seat,
+.lower-seat{
   display: inline-block;
   min-width: max-content;
   overflow: auto;
   user-select: none;
+  padding-top: 5px;
 }
-.upper-layers{
+.upper-layers,
+.lower-layers{
   width: max-content;
   border: 1px solid #E8E8E8;
   border-radius: 4px;
@@ -618,7 +621,7 @@
   writing-mode: vertical-lr;
 }
 .sleeper-lay-search{
-  width: 54px;
+  width: 50px;
   height: 21px;
   line-height: 19px;
 }
@@ -630,8 +633,31 @@
   margin: 2px;
   border-radius: 2px;
 }
+.sleeper-lay-search-low{
+  float: left;
+  position: relative;
+  font-size: 11px;
+  cursor: pointer;
+  margin: 2px;
+  border-radius: 2px;
+}
+.seat-select-low{
+  width: 27px;
+  height: 21px;
+  line-height: 19px;
+}
+.straight-line{
+  display: flex;
+}
 .seat-select-visibility{
-  border: 1px solid #fbf9f9;
+  border: 1px solid #afafaf;
+  background-color: white;
+  color: #000;
+}
+.seat-select-low{
+  border: 1px solid #afafaf;
+  background-color: white;
+  color: #000;
 }
 
 /****** Booking screen End *******/
