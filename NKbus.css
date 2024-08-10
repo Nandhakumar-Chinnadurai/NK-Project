@@ -641,13 +641,10 @@
   margin: 2px;
   border-radius: 2px;
 }
-.seat-select-low{
-  width: 27px;
+.sleeper-lay-search-low{
+  width: 23px;
   height: 21px;
   line-height: 19px;
-}
-.straight-line{
-  display: flex;
 }
 .seat-select-visibility{
   border: 1px solid #afafaf;
@@ -659,5 +656,41 @@
   background-color: white;
   color: #000;
 }
+.seat-leg-layer{
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+}
+.seat-select-all{
+  border: 1px solid #ffffff;
+  background-color: white;
+}
+.seat-selected{
+  border: 1px solid #12532e;
+  background-color: #27AE60;
+}
+.seat-select-male{
+  border: 2px solid #017099;
+  background-color: #FFFFFF;
+}
+.seat-select-female{
+  border: 2px solid #FF89BE;
+  background-color: #FFFFFF;
+}
+.seat-lay-details{
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  margin-bottom: 5px;
+  border-radius: 2px;
+  vertical-align: text-top;
+}
+.align-middle{
+  vertical-align: middle;
+}
+.txt-nowrap{
+  white-space: nowrap;
+}
+
 
 /****** Booking screen End *******/
