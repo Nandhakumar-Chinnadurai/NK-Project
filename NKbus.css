@@ -539,7 +539,10 @@
   display: flex;
   justify-content: space-around;
 }
-.trip-Information{
+.trip-Information-1,
+.trip-Information-2,
+.trip-Information-3,
+.trip-Information-4{
   margin-top: 10px;
 }
 .bus-info{
@@ -578,7 +581,8 @@
 .butt-hidd-1 a,
 .butt-hidd-2 a,
 .butt-hidd-3 a,
-.butt-hidd-4 a{
+.butt-hidd-4 a,
+.butt-hidd-5 a{
   text-decoration: none;
   color: #000;
 }
@@ -642,7 +646,7 @@
   border-radius: 2px;
 }
 .sleeper-lay-search-low{
-  width: 23px;
+  width: 24px;
   height: 21px;
   line-height: 19px;
 }
@@ -662,20 +666,20 @@
   overflow: auto;
 }
 .seat-select-all{
-  border: 1px solid #ffffff;
+  border: 1px solid #000000;
   background-color: white;
 }
 .seat-selected{
-  border: 1px solid #12532e;
-  background-color: #27AE60;
+  border: 1px solid #0b592e;
+  background-color: #5ec88a;
 }
 .seat-select-male{
-  border: 2px solid #017099;
-  background-color: #FFFFFF;
+  border: 2px solid #0404f6;
+  background-color: #a6e5f8;
 }
 .seat-select-female{
   border: 2px solid #FF89BE;
-  background-color: #FFFFFF;
+  background-color: #fac8f2;
 }
 .seat-lay-details{
   display: inline-block;
@@ -685,11 +689,15 @@
   border-radius: 2px;
   vertical-align: text-top;
 }
-.align-middle{
-  vertical-align: middle;
+.aligning{
+  vertical-align:super;
 }
 .txt-nowrap{
   white-space: nowrap;
+}
+.next-continue{
+  display: flex;
+  justify-content: right;
 }
 
 
