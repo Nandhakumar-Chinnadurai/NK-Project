@@ -568,12 +568,16 @@
 .butt-hidd-2 a,
 .butt-hidd-3 a,
 .butt-hidd-4 a,
-.butt-hidd-5 a{
+.butt-hidd-5 a,
+.butt-hidd-6 a,
+.butt-hidd-7 a{
   text-decoration: none;
   color: #000;
 }
 .butt-hidd-3 a:hover,
-.butt-hidd-4 a:hover{
+.butt-hidd-4 a:hover,
+.butt-hidd-6 a span:hover,
+.butt-hidd-7 a span:hover{
   text-decoration: none;
   color: #000;
 }
@@ -696,15 +700,35 @@
 }
 .ticket-info{
   margin-top: 25px;
+  display: flex;
 }
-.tik-left{
+/* .tik-left{
   border: 1px solid rgb(103, 214, 6);
   
 }
 .tik-right{
   border: 1px solid rgb(195, 30, 30);
-}
-.gro-for{
+} */
+.gro-for,
+.gro-for-passenger{
   display: flex;
+}
+.space-padd{
+  padding: 5px;
+}
+.space-padd-1{
+  padding: 15px;
+}
+.space-border-left{
+  padding: 15px;
+}
+.dis-border{
+  padding: 8px;
+}
+.offer-appcode{
+  display: flex;
+}
+.offer-butt{
+  color: orange;
 }
 /* Ticket Details Screen End */
