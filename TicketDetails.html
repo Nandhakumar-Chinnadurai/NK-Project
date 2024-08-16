@@ -125,9 +125,9 @@
 
     <!------- Main Content Section Start ------->
     <main>
-        <div class="trackbus-diff">
+        <div class="trackbus">
             <div class="container-fluid ps-5">
-                <h3>Ticket Details</h3>
+                <h2>Track My Bus</h2>
             </div>
         </div>
         <div class="ticket-section">
@@ -137,126 +137,124 @@
                         <span><i class="fa-solid fa-bus"></i></span>
                         Krishnagiri to Kanyakumari, 8th May 2024
                     </h6>
-                    <div class="container trip-Information-1 pb-3">
-                        <div class="bus-details">
-                            <div class="row bus-info border">
-                                <div class="row pt-2">
-                                    <div class="row">
-                                        <p><span>A/C BharathBenz sleeper</span></p>
-                                    </div>
-                                    <div class="row bus-sec">
-                                        <div class="col-3 left-align">
-                                            <span>Wed May 08 2024</span>
-                                            <h5>11:57 PM</h5>
-                                        </div>
-                                        <div class="col-6 center-align">
-                                            <span>11:12 hrs
-                                                <div class="txt-dot"></div>
-                                            </span>
-                                        </div>
-                                        <div class="col-3 right-align">
-                                            <span>Thu May 09 2024</span>
-                                            <h5>10:15 AM</h5>
-                                        </div>
-                                    </div>
-                                    <div class="row bus-sec pb-2">
-                                        <div class="col-6 left-align">Hosur, Krishnagiri</div>
-                                        <div class="col-6 right-align">Kanyakumari Main Block </div>
-                                    </div>
-
+                    <div class="left-design-line">
+                        <div class="border space-padd-1 pb-2 mb-3">
+                            <div class="row">
+                                <p><span>A/C BharathBenz sleeper</span></p>
+                            </div>
+                            <div class="row bus-sec">
+                                <div class="col-3 left-align">
+                                    <span>Wed May 08 2024</span>
+                                    <h5>11:57 PM</h5>
                                 </div>
+                                <div class="col-6 center-align">
+                                    <span>11:12 hrs
+                                        <div class="txt-dot"></div>
+                                    </span>
+                                </div>
+                                <div class="col-3 right-align">
+                                    <span>Thu May 09 2024</span>
+                                    <h5>10:15 AM</h5>
+                                </div>
+                            </div>
+                            <div class="row bus-sec pb-2">
+                                <div class="col-6 left-align">Hosur, Krishnagiri</div>
+                                <div class="col-6 right-align">Kanyakumari Main Block </div>
                             </div>
                         </div>
                     </div>
                     <h6>Contact Details</h6>
-                    <div class="container trip-Information-1 pb-3">
-                        <div class="bus-details">
-                            <div class="row bus-info border pt-3">
-                                <form class="gro-for">
-                                    <div class="col space-padd">
-                                        <label for="pri-mobi">Primary Mobile</label><br>
-                                    <input type="tel" class="form-control" id="pri-mobi" placeholder="Mobile No" maxlength="10" required>
-                                    </div>
-                                    <div class="col space-padd">
-                                        <label for="alt-mobi">Alternate Mobile</label><br>
-                                    <input type="tel" class="form-control" id="alt-mobi" placeholder="Mobile No(Alternative)" maxlength="10" required>
-                                    </div>
-                                    <div class="col space-padd">
-                                        <label for="tick-email">Email address</label><br>
-                                    <input type="email" class="form-control" id="tick-email" placeholder="E-mail" required>
-                                    </div>
-                                </form>
-                                <p class="pt-1">Your booking deatails will be send to this email address and mobile</p>
+                    <div class="border space-padd-1 pb-2 mb-3">
+                        <form class="gro-for">
+                            <div class="col space-padd">
+                                <label for="pri-mobi">Primary Mobile</label><br>
+                                <input type="tel" class="form-control" id="pri-mobi" placeholder="Mobile No"
+                                    maxlength="10" required>
                             </div>
+                            <div class="col space-padd">
+                                <label for="alt-mobi">Alternate Mobile</label><br>
+                                <input type="tel" class="form-control" id="alt-mobi"
+                                    placeholder="Mobile No(Alternative)" maxlength="10" required>
+                            </div>
+                            <div class="col space-padd">
+                                <label for="tick-email">Email address</label><br>
+                                <input type="email" class="form-control" id="tick-email" placeholder="E-mail" required>
+                            </div>
+                        </form>
+                        <p class="pt-1">Your booking deatails will be send to this email address and mobile</p>
+                    </div>
+                    <div class="title-pass offer-appcode">
+                        <div class="col-8">
+                            <h6>Passenger Details
+                                <span><a href="" class="butt-link">Reselect Seats</a></span>
+                            </h6>
+                        </div>
+                        <div class="col-4 offer-appcode-1">
+                            <input type="checkbox" id="tick-check" class="form-check-label">
+                            <label for="tick-check" class="form-check-label">I wish to enter all passenger names</label>
                         </div>
                     </div>
-                    <h6>Passenger Details <span><a href="">Reselect Seats</a></span></h6>
-                    <div class="container trip-Information-1 pb-3">
-                        <div class="bus-details">
-                            <div class="row bus-info border">
-                                <form class="gro-for-passenger">
-                                    <div class="col-4 space-padd">
-                                        <label for="pass-name">Name</label><br>
-                                        <input type="text" id="pass-name" class="form-control" placeholder="Name" required>
-                                    </div>
-                                    <div class="col-1 space-padd">
-                                        <label for="pass-age">Age</label><br>
-                                        <input type="number" id="pass-age" placeholder="Age" class="form-control" required>
-                                    </div>
-                                    <div class="col-2 space-padd">
-                                        <label>Seat-No.</label><br>
-                                        <div class="pass-seat-no"></div>
-                                        <!-- <input type="number" id="pass-seat-no" class="form-control" required> -->
-                                    </div>
-                                    <div class="col-3 space-padd ps-3">
-                                        <label>Gender</label><br>
-                                        <input type="radio" id="pass-gender-male" name="gender" value="male" required>
-                                        <label for="pass-gender-male" class="pe-4">Male</label>
-                                        <input type="radio" id="pass-gender-female" name="gender" value="female">
-                                        <label for="pass-gender-female">Female</label>
-                                    </div>
-                                    <div class="col-2 space-padd-1">
-                                        <label>Fare</label><br>
-                                        <div class="pass-fare"></div>
-                                        <!-- <input type="number" id="pass-age" placeholder="" class="form-control" required> -->
-                                    </div>
-                                </form>
+                    <div class="border space-padd-1 pb-3 mb-3">
+                        <form class="gro-for-passenger">
+                            <div class="col-4 space-padd">
+                                <label for="pass-name">Name</label><br>
+                                <input type="text" id="pass-name" class="form-control" placeholder="Name" required>
                             </div>
-                        </div>
+                            <div class="col-1 space-padd">
+                                <label for="pass-age">Age</label><br>
+                                <input type="number" id="pass-age" placeholder="Age" class="form-control" required>
+                            </div>
+                            <div class="col-2 space-padd">
+                                <label>Seat-No.</label><br>
+                                <div class="pass-seat-no"></div>
+                                <!-- <input type="number" id="pass-seat-no" class="form-control" required> -->
+                            </div>
+                            <div class="col-3 space-padd ps-3">
+                                <label>Gender</label><br>
+                                <input type="radio" id="pass-gender-male" name="gender" value="male" required>
+                                <label for="pass-gender-male" class="pe-4">Male</label>
+                                <input type="radio" id="pass-gender-female" name="gender" value="female">
+                                <label for="pass-gender-female">Female</label>
+                            </div>
+                            <div class="col-2 space-padd-1">
+                                <label>Fare</label><br>
+                                <div class="pass-fare"></div>
+                                <!-- <input type="number" id="pass-age" placeholder="" class="form-control" required> -->
+                            </div>
+                        </form>
                     </div>
-                    <div class="container trip-Information-1 pb-4">
-                        <div class="bus-details">
-                            <div class="row bus-info border space-padd-1">
-                                <h6>Credit Cards, Debit Cards, Net Banking and Wallet</h6>
-                                <form>
-                                    <input type="radio" id="pay-cho" class="form-check-input" name="pay-cho" value="PayUbiz">
-                                    <label for="pay-cho" class="form-check-label">PayUbiz</label><br>
-                                    <input type="radio" id="pay-cho" class="form-check-input" name="pay-cho" value="CC Avenue">
-                                    <label for="pay-cho" class="form-check-label">CC Avenue</label>
-                                </form>
-                            </div>
-                        </div>
+                    <div class="border space-padd-1 pb-3 mb-3">
+                        <h6>Credit Cards, Debit Cards, Net Banking and Wallet</h6>
+                        <hr>
+                        <form>
+                            <input type="radio" id="pay-cho" class="form-check-input" name="pay-cho" value="PayUbiz">
+                            <label for="pay-cho" class="form-check-label">PayUbiz</label><br>
+                            <input type="radio" id="pay-cho" class="form-check-input" name="pay-cho" value="CC Avenue">
+                            <label for="pay-cho" class="form-check-label">CC Avenue</label>
+                        </form>
                     </div>
                 </div>
                 <div class="col-3 tik-right">
                     <h6>Fare Summary</h6>
-                    <div class="border space-border-left mb-3">
-                        <div class="row">
-                            <div class="col">Ticket Fare</div>
-                            <div class="col">776.00</div>
-                        </div>
-                        <div class="row">
-                            <div class="col">Discount</div>
-                            <div class="col">-28.00</div>
-                        </div>
-                        <div class="row">
-                            <div class="col">GST</div>
-                            <div class="col">27.00</div>
-                        </div>
-                        <hr>
-                        <div class="row">
-                            <div class="col">Total</div>
-                            <div class="col">549.00</div>
+                    <div class="left-design-line">
+                        <div class="border space-border-left mb-3">
+                            <div class="row">
+                                <div class="col">Ticket Fare</div>
+                                <div class="col">776.00</div>
+                            </div>
+                            <div class="row">
+                                <div class="col">Discount</div>
+                                <div class="col">-28.00</div>
+                            </div>
+                            <div class="row">
+                                <div class="col">GST</div>
+                                <div class="col">27.00</div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col">Total</div>
+                                <div class="col">549.00</div>
+                            </div>
                         </div>
                     </div>
                     <h6>Discount</h6>
@@ -264,9 +262,9 @@
                         <p>Do you have offer code?</p>
                         <div class="offer-appcode">
                             <input class="form-control" type="text" id="offer-code" placeholder="OFFER CODE">
-                            <button class="btn btn-outline-warning butt-hidd-6"><a href="">
-                                <span class="offer-butt">Apply</span></a></button>
-                          </div>
+                            <button class="btn btn-dark butt-hidd-6"><a href="">
+                                    <span class="offer-butt">Apply</span></a></button>
+                        </div>
                     </div>
                     <h6>Need GST Invoice?</h6>
                     <div class="border dis-border mb-3">
@@ -275,8 +273,16 @@
                             <label>Request GST Invoice</label>
                         </form>
                     </div>
-                    <button class="btn btn-outline-warning butt-hidd-7" style="width: 100%;"><a href="">
-                        <span class="offer-butt">Proceed to Payment</span></a></button>
+                    <button class="btn btn-warning butt-hidd-7" style="width: 100%;">
+                        <a href="">Proceed to Payment</a></button>
+                    <div class="offer-appcode dis-border mb-2">
+                        <input type="checkbox" id="last-check" class="form-check-input">
+                        <label for="last-check" class="form-check-label ps-2">I agree to all the
+                            <span><a href="" class="butt-link">Terms & Conditions</a></span>&nbsp;and&nbsp;
+                            <span><a href="" class="butt-link">Cancellation Policy</a></span>
+                        </label>
+                    </div>
+                    <p class="dis-border">You will be redirected to secured payment gateway to process payment</p>
                 </div>
             </div>
         </div>

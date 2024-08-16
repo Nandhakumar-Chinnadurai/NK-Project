@@ -692,12 +692,6 @@
 /****** Booking screen End *******/
 
 /* Ticket Details Screen Start */
-.trackbus-diff{
-  margin-top: 75px;
-  background-color: rgb(0, 0, 0);
-  color: white;
-  padding: 2px;
-}
 .ticket-info{
   margin-top: 25px;
   display: flex;
@@ -728,7 +722,20 @@
 .offer-appcode{
   display: flex;
 }
+.offer-appcode-1{
+  text-align: center;
+  border: 1px dotted blue;
+  background-color: rgb(225, 225, 246);
+  border-radius: 8px;
+}
 .offer-butt{
-  color: orange;
+  color: white;
+}
+.butt-link{
+  text-decoration: none;
+}
+.left-design-line{
+  border-left-style: solid;
+  border-left-width: thick;
 }
 /* Ticket Details Screen End */
