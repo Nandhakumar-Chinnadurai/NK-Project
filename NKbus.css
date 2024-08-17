@@ -325,9 +325,18 @@
   display: flex;
   column-gap: 15px; 
 }
-.trackbus-form-inner .t-row .t-col:not(:last-child)
-{ 
+.trackbus-form-inner .t-row .t-col:not(:last-child){ 
   flex: 1; 
+}
+.tra-tab-info{
+  text-align: start;
+}
+.butt-hidd-8{
+  text-decoration: none;
+  color: #000;
+}
+.butt-align{
+  text-align: end;
 }
 @media screen and (max-width:767px) {
 .trackbus-form-inner .t-row{
@@ -737,5 +746,9 @@
 .left-design-line{
   border-left-style: solid;
   border-left-width: thick;
+}
+.last-dis{
+  display: flex;
+  justify-content: flex-end;
 }
 /* Ticket Details Screen End */
