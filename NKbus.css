@@ -752,3 +752,15 @@
   justify-content: flex-end;
 }
 /* Ticket Details Screen End */
+
+/* Dashboard Screen Start */
+.dash{
+  text-align: center;
+}
+.c-align{
+  padding-right: 45px;
+}
+/* .r-align{
+  padding-left: 100px;
+} */
+/* Dashboard Screen End */

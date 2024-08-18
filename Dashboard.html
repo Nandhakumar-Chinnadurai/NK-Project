@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nandha Travels</title>
     <link rel="stylesheet" href="./NKbus.css">
+    <link rel="script" href="./NKbus.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
@@ -72,7 +73,8 @@
                                         <a class="nav-link" href="./Contact.html">Contact</a>
                                     </li>
                                     <li class="nav-item ps-5">
-                                        <a class="nav-link" href="./Dashboard.html" onmouseover="this.style.color='orange'"
+                                        <a class="nav-link" href="./Dashboard.html"
+                                            onmouseover="this.style.color='orange'"
                                             onmouseout="this.style.color='#0ca1d2'">
                                             <i class="fa-solid fa-house-chimney-user"></i>
                                             Dashboard
@@ -106,9 +108,36 @@
             <p>Manage your booking</p>
         </div>
         <div class="acc-info">
-            <div class="row">
-                <div class="col-4"></div>
-                <div class="col-8"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                      <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="list-myproflie-list" data-bs-toggle="list" href="#list-myprofile" role="tab" aria-controls="list-myprofile">
+                            <i class="fa-solid fa-user c-align"></i><span>My Profile</span>
+                            <i class="fa-solid fa-chevron-right ps-5"></i></a>
+                        <a class="list-group-item list-group-item-action" id="list-mybookings-list" data-bs-toggle="list" href="#list-mybookings" role="tab" aria-controls="list-mybookings">
+                            <i class="fa-solid fa-user c-align"></i><span>My Bookings</span>
+                            <i class="fa-solid fa-chevron-right ps-4"></i>
+                        </a>
+                        <a class="list-group-item list-group-item-action" id="list-trackmybus-list" data-bs-toggle="list" href="#list-trackmybus" role="tab" aria-controls="list-trackmybus">
+                            <i class="fa-solid fa-user c-align"></i><span>Track My Bus</span>
+                            <i class="fa-solid fa-chevron-right ps-4"></i>
+                        </a>
+                        <a class="list-group-item list-group-item-action" id="list-feedback-list" data-bs-toggle="list" href="#list-feedback" role="tab" aria-controls="list-feedback">
+                            <i class="fa-solid fa-user c-align"></i><span>Feedback</span>
+                            <i class="fa-solid fa-chevron-right ps-5"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-myprofile" role="tabpanel" aria-labelledby="list-myprofile-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ut, at nobis odio error, quis aliquam accusantium reiciendis hic laudantium adipisci fugit voluptate obcaecati consectetur, sint excepturi sunt impedit alias soluta. Nesciunt laborum quas eligendi fuga esse magni voluptas! Corporis accusantium quae, aliquid quod expedita sint porro ad. Eligendi, ipsa?</div>
+                        <div class="tab-pane fade" id="list-mybookings" role="tabpanel" aria-labelledby="list-mybookings-list">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum aperiam unde, fuga dolor quod autem eligendi tenetur consequatur, nulla rerum ut, odio quam a. Voluptatum officia maxime at ducimus excepturi! Eaque, vel delectus quaerat, beatae saepe consequatur vero nam minima molestias est consequuntur aliquid, id sapiente perspiciatis unde velit tempore quisquam deleniti architecto ad ullam. Repudiandae, officia libero! Dolorem inventore accusamus, libero quibusdam tenetur amet exercitationem animi consequatur harum, reiciendis rem labore vel eos sit iusto quia perspiciatis. Pariatur quos, accusantium praesentium perferendis officia itaque. Eius veritatis est ducimus ipsam ullam minima nesciunt in aperiam sed esse ut inventore tempore, consequatur voluptas dolor. Sed perferendis voluptatibus nostrum alias quaerat, doloribus placeat animi possimus recusandae nemo nihil tenetur eveniet consequuntur amet deserunt enim vero vel a necessitatibus assumenda debitis eos modi explicabo! Numquam perferendis ut voluptas vitae fugiat dignissimos eveniet! Harum quibusdam ab ut aspernatur sint dolorum fugit facilis, quasi molestiae, nostrum vitae, adipisci numquam quam laboriosam dignissimos rerum ducimus. Qui nostrum ratione sunt aperiam dolorem, magni assumenda optio quibusdam minima culpa odio dolore minus dolorum accusantium cum, corrupti animi velit eos. Officia deleniti esse natus labore soluta sapiente, recusandae cupiditate, veritatis perferendis, est quas maxime distinctio necessitatibus culpa inventore possimus.</div>
+                        <div class="tab-pane fade" id="list-trackmybus" role="tabpanel" aria-labelledby="list-trackmybus-list">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit harum enim voluptatum consequuntur non optio deserunt modi, nisi ea libero quas porro ut adipisci, blanditiis possimus quaerat natus temporibus illo aliquam eligendi. Assumenda doloribus iste dolorum ipsum distinctio ullam quibusdam, consequuntur commodi ea iure facilis necessitatibus perspiciatis provident a cumque labore expedita rem quisquam! Quo excepturi reprehenderit obcaecati modi expedita unde sequi facilis? Laboriosam nobis molestiae nostrum? Voluptatum quam fuga ipsam temporibus, error magnam et. Saepe sed a repellendus, accusantium sequi ullam molestias nam incidunt, in repellat dolorem veniam ipsa odio, dolores illum libero rem illo eum voluptatem. Dolorum, aut. Repudiandae, vitae? Minima dicta, quas aliquid, laboriosam, quis nobis itaque ab iusto delectus modi at iste repellat commodi quod sint necessitatibus fuga deleniti et porro sit? Natus nesciunt amet quo error modi quam officiis accusantium, architecto magni maiores accusamus voluptates incidunt unde culpa ea fuga eius ipsum necessitatibus assumenda? Itaque pariatur mollitia odit maxime. Quaerat, iste explicabo reiciendis odio est dicta ipsum accusamus similique neque officiis sit quo aut culpa facere, dolores cumque nesciunt consectetur praesentium earum minus blanditiis eligendi molestias! Fuga tempore unde consequatur fugiat similique maiores numquam possimus libero debitis dignissimos rerum quidem aut voluptates adipisci doloribus, modi distinctio natus magni itaque perspiciatis rem placeat porro assumenda autem. Officia, veritatis sint corrupti accusamus cupiditate aliquid autem voluptates consequuntur aperiam, error odio magnam illum velit non at enim sed architecto perspiciatis rem quasi. Tempora soluta at eos deserunt fuga commodi nostrum consectetur repellat non, accusamus beatae quis sunt deleniti fugiat iure eum veniam? Quis voluptates voluptatem officia quo atque quidem molestias ab accusantium accusamus, veritatis eum? Voluptatibus soluta pariatur, ab animi, eum minus aspernatur tenetur voluptate vel amet cupiditate consequatur molestiae natus eos obcaecati, molestias expedita iste iure sed ratione commodi perferendis aliquid alias illo? Corporis velit pariatur consectetur.</div>
+                        <div class="tab-pane fade" id="list-feedback" role="tabpanel" aria-labelledby="list-feedback-list">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, atque, reprehenderit, facilis provident cupiditate esse omnis maxime voluptatem aspernatur ab dolore at eius ea! Mollitia reiciendis placeat eius reprehenderit dignissimos esse suscipit facere provident porro voluptatem, sequi quod minima, fuga debitis. Placeat, ducimus. Ipsum cupiditate eius reiciendis blanditiis veritatis deleniti.</div>
+                      </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
