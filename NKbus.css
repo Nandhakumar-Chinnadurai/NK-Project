@@ -581,7 +581,8 @@
 .butt-hidd-6 a,
 .butt-hidd-7 a,
 .butt-hidd-8 a,
-.butt-hidd-9 a{
+.butt-hidd-9 a,
+.butt-hidd-10 a{
   text-decoration: none;
   color: #000;
 }
@@ -765,4 +766,5 @@
 .button-last-dis{
   width: 20%;
 }
+
 /* Dashboard Screen End */
