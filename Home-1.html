@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandha Travels</title>
+    <link rel="stylesheet" href="./NKbus.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6556353a64.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!------------ Header Start ---------------->
+    <!------------ Navbar Start --------------->
+    <header>
+        <nav class="navbar pt-0 pb-0 fixed-top navbar-expand-md bg-light">
+            <div class="container-fluid navbar">
+                <a class="navbar-brand ms-4" href="Home.html">
+                    <img src="./Assets/images/Logo Nandha.png" alt="Logo" width="170" height="40">
+                </a>
+                <nav class="navbar navbar-light">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </nav>
+                <div class="nav-space-gap">
+                    <div class="offcanvas offcanvas-start text-bg-dark" style="width: 250px;" tabindex="-1"
+                        id="navbarNavDropdown" aria-labelledby="navbarNavDropdownLabel">
+                        <div class="offcanvas-header">
+                            <img src="./Assets/images/Logo Nandha.png" alt="Logo" width="170" height="40"
+                                class="offcanvas-title" id="navbarNavDropdownLabel">
+                            <button type="button" class="btn-close btn-close-light" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="nav justify-content-start flex-grow-1 pe-3 nav-pills">
+                                <ul class="nav nav-pills">
+                                    <li class="nav-item pe-3">
+                                        <a class="nav-link active" aria-current="page" href="./Home-1.html">Home </a>
+                                    </li>
+                                    <li class="nav-item pe-3">
+                                        <a class="nav-link" href="./Track-1.html">Track Bus</a>
+                                    </li>
+                                    <li class="nav-item pe-3 dropdown">
+                                        <a class="nav-link dropdown-toggle" href="./Manage-1.html" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Manage Ticket
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="./Manage-1.html">Print Ticket</a></li>
+                                            <li><a class="dropdown-item" href="./Manage-1.html">Edit Ticket</a></li>
+                                            <li><a class="dropdown-item" href="./Manage-1.html">Cancel Ticket</a></li>
+                                            <li><a class="dropdown-item" href="./Manage-1.html">Download Ticket</a></li>
+                                            <li><a class="dropdown-item" href="./Manage-1.html">Send SMS / Email</a></li>
+                                            <li><a class="dropdown-item" href="./Manage-1.html">Reschedule Ticket</a></li>
+                                            <li><a class="dropdown-item" href="./Manage-1.html">Download Invoice</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item pe-5">
+                                        <a class="nav-link" href="./Contact-1.html">Contact</a>
+                                    </li>
+                                    <li class="nav-item ps-5">
+                                        <a class="nav-link" href="./Dashboard.html"
+                                            onmouseover="this.style.color='orange'"
+                                            onmouseout="this.style.color='#0ca1d2'">
+                                            <i class="fa-solid fa-house-chimney-user"></i>
+                                            Dashboard
+                                        </a>
+                                    </li>
+                                    <li class="nav-item pe-3">
+                                        <a class="nav-link" href="./Home.html" onmouseover="this.style.color='orange'"
+                                            onmouseout="this.style.color='#0ca1d2'">
+                                            <i class="fa-solid fa-user-gear"></i>
+                                            Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+        </nav>
+    </header>
+    <!-------------- Navbar End --------------->
+    <!-------------- Header End --------------->
+    <!----------------Main Content Start-------------->
+    <Main>
+        <div class="bgbus container-fluid">
+            <div class="container">
+                <p class="centered">Affordable,secure and reliable services!<br>
+                    <span class="h1 text-primary"> Best Experience Evertime!</span>
+                </p>
+                <!-- Search Tab Start -->
+                <div class="search">
+                    <div class="search-outer">
+                        <div class="search-inner">
+                            <form action="" method="post">
+                                <div class="row sea-gap">
+                                    <div class="col-lg-3 search-first">
+                                        <div class="input-group">
+                                            <span class="input-group-text">
+                                                <i class="fa-solid fa-bus"></i>
+                                            </span>
+                                            <select class="form-control">
+                                                <option>Choose Arrival</option required>
+                                                <option></option>
+                                                <option>--TAMIL NADU--</option>
+                                                <option></option>
+                                                <option>Ariyalur</option>
+                                                <option>Chengalpattu</option>
+                                                <option>Chennai</option>
+                                                <option>Coimbatore</option>
+                                                <option>Cuddalore</option>
+                                                <option>Dharamapuri</option>
+                                                <option>Dindigul</option>
+                                                <option>Erode</option>
+                                                <option>Kallakurichi</option>
+                                                <option>Kanchipuram</option>
+                                                <option>Kanyakumari</option>
+                                                <option>Karur</option>
+                                                <option>Krishnagiri</option>
+                                                <option>Madurai</option>
+                                                <option>Mailaduthurai</option>
+                                                <option>Nagapattinam</option>
+                                                <option>Namakkal</option>
+                                                <option>Nilgiris</option>
+                                                <option>Perambalur</option>
+                                                <option>Pudukkottai</option>
+                                                <option>Ramanathapuram</option>
+                                                <option>Ranipet</option>
+                                                <option>Salem</option>
+                                                <option>Sivagangai</option>
+                                                <option>Tenkasi</option>
+                                                <option>Thanjavur</option>
+                                                <option>Theni</option>
+                                                <option>Thoothukudi</option>
+                                                <option>Tiruchirappalli</option>
+                                                <option>Tirunelveli</option>
+                                                <option>Tirupathur</option>
+                                                <option>Tiruppur</option>
+                                                <option>Tiruvallur</option>
+                                                <option>Tiruvannamalai</option>
+                                                <option>Tiruvarur</option>
+                                                <option>Vellore</option>
+                                                <option>Viluppuram</option>
+                                                <option>Virudhunagar</option>
+                                                <option></option>
+                                                <option>--PONDICHERRY--</option>
+                                                <option></option>
+                                                <option>Karaikal</option>
+                                                <option>Mahe</option>
+                                                <option>Puducherry</option>
+                                                <option>Yanam</option>
+                                                <option></option>
+                                                <option>--KERALA--</option>
+                                                <option></option>
+                                                <option>Thiruvanathapuram</option>
+                                                <option>Kollam</option>
+                                                <option>Pathanamthitta</option>
+                                                <option>AlappuZha</option>
+                                                <option>Kottayam</option>
+                                                <option>Idukki</option>
+                                                <option>Ernakulam</option>
+                                                <option>Thrissur</option>
+                                                <option>Palakkad</option>
+                                                <option>Malappuram</option>
+                                                <option>Kozhikode</option>
+                                                <option>Wayanad</option>
+                                                <option>Kannur</option>
+                                                <option>Kasaragod</option>
+                                                <option></option>
+                                                <option>--KARNATAKA--</option>
+                                                <option></option>
+                                                <option>Bagalkote</option>
+                                                <option>Bengaluru Urban</option>
+                                                <option>Bengaluru Rural</option>
+                                                <option>Belagavi</option>
+                                                <option>Ballari</option>
+                                                <option>Bidar</option>
+                                                <option>Vijayapura</option>
+                                                <option>Chamarajanagar</option>
+                                                <option>Chikkaballapura</option>
+                                                <option>Chikkamagaluru</option>
+                                                <option>Chitradurga</option>
+                                                <option>Dakshina Kannada</option>
+                                                <option>Davanagere</option>
+                                                <option>Dharwad</option>
+                                                <option>Gadag</option>
+                                                <option>Kalaburagi</option>
+                                                <option>Hassan</option>
+                                                <option>Haveri</option>
+                                                <option>Kodagu</option>
+                                                <option>kolar</option>
+                                                <option>Koppal</option>
+                                                <option>Mandya</option>
+                                                <option>Mysuru</option>
+                                                <option>Raichur</option>
+                                                <option>Ramanagara</option>
+                                                <option>Shivamogga</option>
+                                                <option>Tumakuru</option>
+                                                <option>Udupi</option>
+                                                <option>Uttara Kannada</option>
+                                                <option>Vijanagara</option>
+                                                <option>Yadgiri</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 search-two">
+                                        <div class="input-group">
+                                            <span class="input-group-text">
+                                                <i class="fa-solid fa-location-dot"></i>
+                                            </span>
+                                            <select class="form-control" required>
+                                                <option>Choose Destination</option>
+                                                <option></option>
+                                                <option>--TAMIL NADU--</option>
+                                                <option></option>
+                                                <option>Ariyalur</option>
+                                                <option>Chengalpattu</option>
+                                                <option>Chennai</option>
+                                                <option>Coimbatore</option>
+                                                <option>Cuddalore</option>
+                                                <option>Dharamapuri</option>
+                                                <option>Dindigul</option>
+                                                <option>Erode</option>
+                                                <option>Kallakurichi</option>
+                                                <option>Kanchipuram</option>
+                                                <option>Kanyakumari</option>
+                                                <option>Karur</option>
+                                                <option>Krishnagiri</option>
+                                                <option>Madurai</option>
+                                                <option>Mailaduthurai</option>
+                                                <option>Nagapattinam</option>
+                                                <option>Namakkal</option>
+                                                <option>Nilgiris</option>
+                                                <option>Perambalur</option>
+                                                <option>Pudukkottai</option>
+                                                <option>Ramanathapuram</option>
+                                                <option>Ranipet</option>
+                                                <option>Salem</option>
+                                                <option>Sivagangai</option>
+                                                <option>Tenkasi</option>
+                                                <option>Thanjavur</option>
+                                                <option>Theni</option>
+                                                <option>Thoothukudi</option>
+                                                <option>Tiruchirappalli</option>
+                                                <option>Tirunelveli</option>
+                                                <option>Tirupathur</option>
+                                                <option>Tiruppur</option>
+                                                <option>Tiruvallur</option>
+                                                <option>Tiruvannamalai</option>
+                                                <option>Tiruvarur</option>
+                                                <option>Vellore</option>
+                                                <option>Viluppuram</option>
+                                                <option>Virudhunagar</option>
+                                                <option></option>
+                                                <option>--PONDICHERRY--</option>
+                                                <option></option>
+                                                <option>Karaikal</option>
+                                                <option>Mahe</option>
+                                                <option>Puducherry</option>
+                                                <option>Yanam</option>
+                                                <option></option>
+                                                <option>--KERALA--</option>
+                                                <option></option>
+                                                <option>Thiruvanathapuram</option>
+                                                <option>Kollam</option>
+                                                <option>Pathanamthitta</option>
+                                                <option>AlappuZha</option>
+                                                <option>Kottayam</option>
+                                                <option>Idukki</option>
+                                                <option>Ernakulam</option>
+                                                <option>Thrissur</option>
+                                                <option>Palakkad</option>
+                                                <option>Malappuram</option>
+                                                <option>Kozhikode</option>
+                                                <option>Wayanad</option>
+                                                <option>Kannur</option>
+                                                <option>Kasaragod</option>
+                                                <option></option>
+                                                <option>--KARNATAKA--</option>
+                                                <option></option>
+                                                <option>Bagalkote</option>
+                                                <option>Bengaluru Urban</option>
+                                                <option>Bengaluru Rural</option>
+                                                <option>Belagavi</option>
+                                                <option>Ballari</option>
+                                                <option>Bidar</option>
+                                                <option>Vijayapura</option>
+                                                <option>Chamarajanagar</option>
+                                                <option>Chikkaballapura</option>
+                                                <option>Chikkamagaluru</option>
+                                                <option>Chitradurga</option>
+                                                <option>Dakshina Kannada</option>
+                                                <option>Davanagere</option>
+                                                <option>Dharwad</option>
+                                                <option>Gadag</option>
+                                                <option>Kalaburagi</option>
+                                                <option>Hassan</option>
+                                                <option>Haveri</option>
+                                                <option>Kodagu</option>
+                                                <option>kolar</option>
+                                                <option>Koppal</option>
+                                                <option>Mandya</option>
+                                                <option>Mysuru</option>
+                                                <option>Raichur</option>
+                                                <option>Ramanagara</option>
+                                                <option>Shivamogga</option>
+                                                <option>Tumakuru</option>
+                                                <option>Udupi</option>
+                                                <option>Uttara Kannada</option>
+                                                <option>Vijanagara</option>
+                                                <option>Yadgiri</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 search-three">
+                                        <div class="input-group">
+                                            <span class="input-group-text">
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                            </span>
+                                            <input type="date" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 search-four">
+                                        <div class="input-group">
+                                            <span class="input-group-text">
+                                                <i class="fa-regular fa-calendar"></i>
+                                            </span>
+                                            <input type="date" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 search-five">
+                                        <button type="submit" class="btn btn-warning search-button-link"
+                                            style="width: 100%;">
+                                            <a href="./Booking-1.html">Search Bus</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container-fluid" id="bgbus">
+      <div class="container">
+        <p class="centered">Affordable,secure and reliable services!<br>
+          <span class="h1 text-primary"> Best Experience Evertime!</span>
+        </p>
+        !----------- Search Tab Start -----------------
+        <div class="search">
+          <div class=" search-outer">
+            <div class="search-inner">
+                <div class="row">
+                  <div class="col-lg-3 search-first">
+                    <div class="input-group">
+                      <span class="input-group-text">
+                        <i class="fa-solid fa-bus"></i>
+                      </span>
+                      <select class="form-control">
+                        <option>Choose Arrival</option>
+                        <option></option>
+                        <option>--TAMIL NADU--</option>
+                        <option></option>
+                        <option>Ariyalur</option>
+                        <option>Chengalpattu</option>
+                        <option>Chennai</option>
+                        <option>Coimbatore</option>
+                        <option>Cuddalore</option>
+                        <option>Dharamapuri</option>
+                        <option>Dindigul</option>
+                        <option>Erode</option>
+                        <option>Kallakurichi</option>
+                        <option>Kanchipuram</option>
+                        <option>Kanyakumari</option>
+                        <option>Karur</option>
+                        <option>Krishnagiri</option>
+                        <option>Madurai</option>
+                        <option>Mailaduthurai</option>
+                        <option>Nagapattinam</option>
+                        <option>Namakkal</option>
+                        <option>Nilgiris</option>
+                        <option>Perambalur</option>
+                        <option>Pudukkottai</option>
+                        <option>Ramanathapuram</option>
+                        <option>Ranipet</option>
+                        <option>Salem</option>
+                        <option>Sivagangai</option>
+                        <option>Tenkasi</option>
+                        <option>Thanjavur</option>
+                        <option>Theni</option>
+                        <option>Thoothukudi</option>
+                        <option>Tiruchirappalli</option>
+                        <option>Tirunelveli</option>
+                        <option>Tirupathur</option>
+                        <option>Tiruppur</option>
+                        <option>Tiruvallur</option>
+                        <option>Tiruvannamalai</option>
+                        <option>Tiruvarur</option>
+                        <option>Vellore</option>
+                        <option>Viluppuram</option>
+                        <option>Virudhunagar</option>
+                        <option></option>
+                        <option>--PONDICHERRY--</option>
+                        <option></option>
+                        <option>Karaikal</option>
+                        <option>Mahe</option>
+                        <option>Puducherry</option>
+                        <option>Yanam</option>
+                        <option></option>
+                        <option>--KERALA--</option>
+                        <option></option>
+                        <option>Thiruvanathapuram</option>
+                        <option>Kollam</option>
+                        <option>Pathanamthitta</option>
+                        <option>AlappuZha</option>
+                        <option>Kottayam</option>
+                        <option>Idukki</option>
+                        <option>Ernakulam</option>
+                        <option>Thrissur</option>
+                        <option>Palakkad</option>
+                        <option>Malappuram</option>
+                        <option>Kozhikode</option>
+                        <option>Wayanad</option>
+                        <option>Kannur</option>
+                        <option>Kasaragod</option>
+                        <option></option>
+                        <option>--KARNATAKA--</option>
+                        <option></option>
+                        <option>Bagalkote</option>
+                        <option>Bengaluru Urban</option>
+                        <option>Bengaluru Rural</option>
+                        <option>Belagavi</option>
+                        <option>Ballari</option>
+                        <option>Bidar</option>
+                        <option>Vijayapura</option>
+                        <option>Chamarajanagar</option>
+                        <option>Chikkaballapura</option>
+                        <option>Chikkamagaluru</option>
+                        <option>Chitradurga</option>
+                        <option>Dakshina Kannada</option>
+                        <option>Davanagere</option>
+                        <option>Dharwad</option>
+                        <option>Gadag</option>
+                        <option>Kalaburagi</option>
+                        <option>Hassan</option>
+                        <option>Haveri</option>
+                        <option>Kodagu</option>
+                        <option>kolar</option>
+                        <option>Koppal</option>
+                        <option>Mandya</option>
+                        <option>Mysuru</option>
+                        <option>Raichur</option>
+                        <option>Ramanagara</option>
+                        <option>Shivamogga</option>
+                        <option>Tumakuru</option>
+                        <option>Udupi</option>
+                        <option>Uttara Kannada</option>
+                        <option>Vijanagara</option>
+                        <option>Yadgiri</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 search-two">
+                    <div class="input-group">
+                      <span class="input-group-text">
+                        <i class="fa-solid fa-location-dot"></i>
+                      </span>
+                      <select class="form-control">
+                        <option>Choose Destination</option>
+                        <option></option>
+                        <option>--TAMIL NADU--</option>
+                        <option></option>
+                        <option>Ariyalur</option>
+                        <option>Chengalpattu</option>
+                        <option>Chennai</option>
+                        <option>Coimbatore</option>
+                        <option>Cuddalore</option>
+                        <option>Dharamapuri</option>
+                        <option>Dindigul</option>
+                        <option>Erode</option>
+                        <option>Kallakurichi</option>
+                        <option>Kanchipuram</option>
+                        <option>Kanyakumari</option>
+                        <option>Karur</option>
+                        <option>Krishnagiri</option>
+                        <option>Madurai</option>
+                        <option>Mailaduthurai</option>
+                        <option>Nagapattinam</option>
+                        <option>Namakkal</option>
+                        <option>Nilgiris</option>
+                        <option>Perambalur</option>
+                        <option>Pudukkottai</option>
+                        <option>Ramanathapuram</option>
+                        <option>Ranipet</option>
+                        <option>Salem</option>
+                        <option>Sivagangai</option>
+                        <option>Tenkasi</option>
+                        <option>Thanjavur</option>
+                        <option>Theni</option>
+                        <option>Thoothukudi</option>
+                        <option>Tiruchirappalli</option>
+                        <option>Tirunelveli</option>
+                        <option>Tirupathur</option>
+                        <option>Tiruppur</option>
+                        <option>Tiruvallur</option>
+                        <option>Tiruvannamalai</option>
+                        <option>Tiruvarur</option>
+                        <option>Vellore</option>
+                        <option>Viluppuram</option>
+                        <option>Virudhunagar</option>
+                        <option></option>
+                        <option>--PONDICHERRY--</option>
+                        <option></option>
+                        <option>Karaikal</option>
+                        <option>Mahe</option>
+                        <option>Puducherry</option>
+                        <option>Yanam</option>
+                        <option></option>
+                        <option>--KERALA--</option>
+                        <option></option>
+                        <option>Thiruvanathapuram</option>
+                        <option>Kollam</option>
+                        <option>Pathanamthitta</option>
+                        <option>AlappuZha</option>
+                        <option>Kottayam</option>
+                        <option>Idukki</option>
+                        <option>Ernakulam</option>
+                        <option>Thrissur</option>
+                        <option>Palakkad</option>
+                        <option>Malappuram</option>
+                        <option>Kozhikode</option>
+                        <option>Wayanad</option>
+                        <option>Kannur</option>
+                        <option>Kasaragod</option>
+                        <option></option>
+                        <option>--KARNATAKA--</option>
+                        <option></option>
+                        <option>Bagalkote</option>
+                        <option>Bengaluru Urban</option>
+                        <option>Bengaluru Rural</option>
+                        <option>Belagavi</option>
+                        <option>Ballari</option>
+                        <option>Bidar</option>
+                        <option>Vijayapura</option>
+                        <option>Chamarajanagar</option>
+                        <option>Chikkaballapura</option>
+                        <option>Chikkamagaluru</option>
+                        <option>Chitradurga</option>
+                        <option>Dakshina Kannada</option>
+                        <option>Davanagere</option>
+                        <option>Dharwad</option>
+                        <option>Gadag</option>
+                        <option>Kalaburagi</option>
+                        <option>Hassan</option>
+                        <option>Haveri</option>
+                        <option>Kodagu</option>
+                        <option>kolar</option>
+                        <option>Koppal</option>
+                        <option>Mandya</option>
+                        <option>Mysuru</option>
+                        <option>Raichur</option>
+                        <option>Ramanagara</option>
+                        <option>Shivamogga</option>
+                        <option>Tumakuru</option>
+                        <option>Udupi</option>
+                        <option>Uttara Kannada</option>
+                        <option>Vijanagara</option>
+                        <option>Yadgiri</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 search-three">
+                    <div class="input-group">
+                      <span class="input-group-text">
+                        <i class="fa-solid fa-calendar-days"></i>
+                      </span>
+                      <input type="date" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-lg-2 search-four">
+                    <div class="input-group">
+                      <span class="input-group-text">
+                        <i class="fa-regular fa-calendar"></i>
+                      </span>
+                      <input type="date" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-lg-2 search-five">
+                    <button type="submit" class="btn btn-warning" style="width: 100%;">Search Bus</button>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        !-------------- Search Tab End ----------------
+      </div>
+    </div> -->
+        <!------------- App Poster Start ---------------------->
+        <div class=" container poster">
+            <div class="row">
+                <div class="col-md-9 poster-combine">
+                    <div class="row poster-blue">
+                        <h5 class="text-warning">Nandha Travels</h5>
+                        <h3>Download <b>App</b></h3>
+                        <br><br>
+                        <p>We at Nandha travels strive to maintain the most reasonable rates in the market.
+                            This also makes our passengers happy and thus we further give them discount
+                            offers on a regular basis to enhance their happiness.<br>
+                            Nandha Travels a newborn to travels industry, but a unit of Nandha Travels an excelling
+                            company in the field of infrastructure industry with great quality and commitment.
+                        </p>
+                    </div>
+                    <div class="row poster-img-item">
+                        <div class="col">
+                            <a href="#"><img src="./Assets/images/Playstore.png" class="playapp-rou img-fluid"
+                                    alt="playstore-app">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#"><img src="./Assets/images/Appstore.png" class="appstore-rou img-fluid"
+                                    alt="Appstore-app">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <h5>Book for <b>Existing Discounts</b></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 poster-white">
+                    <img src="./Assets/images/Appposter.png" alt="Appposter image" class="img-fluid poster-white-img">
+                </div>
+            </div>
+        </div>
+        <!------------- App Poster End --------------->
+        <!------------- Features Start --------------->
+        <div class="features">
+            <div class="container">
+                <h2 class="features-blue">Our <b class="text-warning"> Features</b></h2>
+                <p>We are the creators of India's 1st comfort of branded buses<br>
+                    that guarantee safe & comfortable journeys.</p>
+                <br>
+                <div class="row">
+                    <div class="col features-list bg-warning">
+                        <div class="row">
+                            <div class="features-head">
+                                <h5>AC / Non-AC Sleeper</h5>
+                            </div>
+                            <div class="col-12 features-img">
+                                <img src="./Assets/images/Ac sleeper.jpg" class="img-fluid">
+                            </div>
+                            <div class="col-12 features-list-item">
+                                <p>AC sleeping berths that allow passengers to sleep comfortably
+                                    during their journey
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col features-list bg-secondary">
+                        <div class="row">
+                            <div class="features-head">
+                                <h5>Storage Compartments</h5>
+                            </div>
+                            <div class="col-12 features-img">
+                                <img src="./Assets/images/Storage com.jpg" class="img-fluid">
+                            </div>
+                            <div class="col-12 features-list-item">
+                                <p>Storage compartments where you can store your things
+                                    safely until you reach your destination</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col features-list bg-danger">
+                        <div class="row">
+                            <div class="row features-head">
+                                <h5>Lucky Seatings with Wi-Fi</h5>
+                            </div>
+                            <div class="col-12 features-img">
+                                <img src="./Assets/images/wi-fi img.jpg" class="img-fluid">
+                            </div>
+                            <div class="col-12 features-list-item">
+                                <p>Passengers travelling in AC sleeper buses will also get
+                                    free Wi-Fi facility</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col features-list bg-success">
+                        <div class="row">
+                            <div class="row features-head">
+                                <h5>Best Hospitality</h5>
+                            </div>
+                            <div class="col-12 features-img">
+                                <img src="./Assets/images/First-aid.png" class="img-fluid">
+                            </div>
+                            <div class="col-12 features-list-item">
+                                <p>In the suburbs, while travel time required the nearest health
+                                    care services</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------- Features End --------------->
+                <!------------- Benefits Start --------------->
+                <div class="facility-features">
+                    <div class=" container bg-light">
+                        <h2 class="pt-3">Our <b class="text-warning">Benefits</b></h2>
+                        <img src="./Assets/images/Amenties-1.png" class="facility-img img-fluid">
+                        <img src="./Assets/images/Amenties-2.png" class="facility-img img-fluid">
+                    </div>
+                </div>
+                <!------------- Benefits End --------------->
+                <!------------- Amenties Start --------------->
+                <div class="title-head">
+                    <div class="row">
+                        <div class="col-md-6 align">
+                            <h2 class="title-head-blue">We Provide<br>
+                                <span class="h1">Best Amenties</span>
+                            </h2>
+                            <p>Nandha travels would promise you the same as you read above would be the same and
+                                would try to improve its standards. Nandha travels aims to rapid growth in this
+                                industry by adopting more number of buses and providing more higher standards
+                                of quality and comfort!!!
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="./Assets/images/Travel Amenties.png" class="img-fluid" alt="travel Amenties">
+                        </div>
+                    </div>
+                </div>
+                <!------------- Amenties End --------------->
+                <!------------- Route Start --------------->
+                <div class="container title-head-center">
+                    <h2 class="title-head-blue">Top <span class="h1 text-warning">Routes</span></h2>
+                    <p>Choose the destination just right for your travel</p>
+                    <div class="mt-2 mb-5">
+                        <img class="img-fluid" src="./Assets/images/Route pin.png" alt="Routes" loading="lazy">
+                    </div>
+
+                </div>
+                <!------------- Route End --------------->
+                <!---------- Image Carousel Start --------->
+                <div class="Image-Slide">
+                    <div id="carouselExampleIndicators" class="carousel slide mt-2 mb-5">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./Assets/images/Bg-BusOpacity.jpg" class="d-block w-100" alt="Bus Image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./Assets/images/Bg-BusOpacity.jpg" class="d-block w-100" alt="Bus Image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./Assets/images/Bg-BusOpacity.jpg" class="d-block w-100" alt="Bus Image">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <!---------- Image Carousel End ------------>
+    </Main>
+    <!--------- Main content End ----------->
+    <!---------- Footer Start ------------>
+    <footer class="footer-section">
+        <!--------- Footer Top Start ----------->
+        <div class=" container footer-top">
+            <div class="row">
+                <div class="col-md col-lg">
+                    <img src="./Assets/images/Logo Nandha.png" alt="Logo" width="170" height="40">
+                    <br>
+                    <br>
+                    <p class="text"> Nandha travels bus tickets online in website and from your mobile with few easy
+                        steps.<br>
+                        Go to <strong>My Bookings</strong> to manage your account.
+                    </p>
+                </div>
+                <div class="col-md col-lg">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Boarding Places</a></li>
+                        <li><a href="#">Franchise Login</a></li>
+                    </ul>
+                </div>
+                <div class="col-md col-lg">
+                    <h5>Manage Tickets</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Download Tickets</a></li>
+                        <li><a href="#">Track My Bus</a></li>
+                        <li><a href="#">Cancel Tickets</a></li>
+                        <li><a href="#">Change Boarding Point</a></li>
+                        <li><a href="#">Change Travel Date</a></li>
+                    </ul>
+                </div>
+                <div class="col-md col-lg footernum">
+                    <h5>Head Office</h5>
+                    <p>254, 2nd Street, Near Crosscut <br>
+                        Signal,Gandhipuram,<br>
+                        Coimbatore - 641 012.<br>
+                        <a href="#">9344062552</a>
+                    </p>
+                </div>
+                <div class="col-md col-lg">
+                    <h5>Get In Touch</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">0111-2222222</a></li>
+                        <li><a href="#">1000-3333333</a></li>
+                        <li><a href="#">vrgnvn4ncj4657@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!----------- Footer Top End -------->
+        <hr>
+        <!----------- Footer Bottom Start -------->
+        <div class="container-fluid footer-bottom">
+            <div class="row justify-content-between ps-5 pe-5">
+                <p class="col-sm-auto">Copyright © 2024 -Nandha Travels</p>
+                <p class="col-sm-auto">Powered By
+                    <a href="#" target="_blank">Nandha Solutions</a>
+                </p>
+            </div>
+        </div>
+        <!---------- Footer Bottom End ------->
+    </footer>
+    <!----------- Footer End ----------->
+</body>
+
+</html>

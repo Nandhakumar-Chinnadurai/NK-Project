@@ -1,0 +1,1676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandha Travels</title>
+    <link rel="stylesheet" href="./NKbus.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6556353a64.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!------------ Header Start ---------------->
+    <!------------ Navbar Start --------------->
+    <header>
+        <nav class="navbar pt-0 pb-0 fixed-top navbar-expand-md bg-light">
+            <div class="container-fluid navbar">
+                <a class="navbar-brand ms-4" href="Home.html">
+                    <img src="./Assets/images/Logo Nandha.png" alt="Logo" width="170" height="40">
+                </a>
+                <nav class="navbar navbar-light">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </nav>
+                <div class="nav-space-gap">
+                    <div class="offcanvas offcanvas-start text-bg-dark" style="width: 250px;" tabindex="-1"
+                        id="navbarNavDropdown" aria-labelledby="navbarNavDropdownLabel">
+                        <div class="offcanvas-header">
+                            <img src="./Assets/images/Logo Nandha.png" alt="Logo" width="170" height="40"
+                                class="offcanvas-title" id="navbarNavDropdownLabel">
+                            <button type="button" class="btn-close btn-close-light" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="nav justify-content-start flex-grow-1 pe-3 nav-pills">
+                                <li class="nav-item pe-3">
+                                    <a class="nav-link active" aria-current="page" href="./Home-1.html">Home </a>
+                                </li>
+                                <li class="nav-item pe-3">
+                                    <a class="nav-link" href="./Track-1.html">Track Bus</a>
+                                </li>
+                                <li class="nav-item pe-3 dropdown">
+                                    <a class="nav-link dropdown-toggle" href="./Manage-1.html" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Manage Ticket
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="./Manage-1.html">Print Ticket</a></li>
+                                        <li><a class="dropdown-item" href="./Manage-1.html">Edit Ticket</a></li>
+                                        <li><a class="dropdown-item" href="./Manage-1.html">Cancel Ticket</a></li>
+                                        <li><a class="dropdown-item" href="./Manage-1.html">Download Ticket</a></li>
+                                        <li><a class="dropdown-item" href="./Manage-1.html">Send SMS / Email</a></li>
+                                        <li><a class="dropdown-item" href="./Manage-1.html">Reschedule Ticket</a></li>
+                                        <li><a class="dropdown-item" href="./Manage-1.html">Download Invoice</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item pe-5">
+                                    <a class="nav-link" href="./Contact-1.html">Contact</a>
+                                </li>
+                                <li class="nav-item ps-5">
+                                    <a class="nav-link" href="./Dashboard.html"
+                                        onmouseover="this.style.color='orange'"
+                                        onmouseout="this.style.color='#0ca1d2'">
+                                        <i class="fa-solid fa-house-chimney-user"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="nav-item pe-3">
+                                    <a class="nav-link" href="./Home.html" onmouseover="this.style.color='orange'"
+                                        onmouseout="this.style.color='#0ca1d2'">
+                                        <i class="fa-solid fa-user-gear"></i>
+                                        Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </nav>
+    </header>
+    <!-------------- Navbar End --------------->
+    <!-------------- Header End --------------->
+
+    <!-------- Content Section Start ------->
+    <section>
+        <div class="book container-fluid">
+            <div class="row filter">
+                <div class="col-3 filter-left">
+                    <div class="fil-body">
+                        <div class="row">
+                            <h6 class="col"> FILTERS </h6>
+                            <a href="#" class="col text-right">Clear</a>
+                        </div>
+                        <hr>
+                        <div class="comm">
+                            <h6>Departure Time</h6>
+                            <div class="row comm-1 pt-1">
+                                <div class="col-6">
+                                    <div class="btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn btn-outline-secondary" for="btn-check-out">
+                                            <i class="fa-solid fa-cloud-sun"></i>
+                                            <input type="checkbox" class="btn-check" id="btn-check-out"
+                                                autocomplete="off" value="Morning">
+                                            <span>6AM - 12PM</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-6 pb-2">
+                                    <div class="btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn btn-outline-secondary" for="btn-check-outl">
+                                            <i class="fa-solid fa-sun"></i>
+                                            <input type="checkbox" class="btn-check" id="btn-check-outl"
+                                                autocomplete="off" value="Afternoon">
+                                            <span>12PM - 6PM</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn btn-outline-secondary" for="btn-check-outli">
+                                            <i class="fa-solid fa-cloud-moon"></i>
+                                            <input type="checkbox" class="btn-check" id="btn-check-outli"
+                                                autocomplete="off" value="Night">
+                                            <span>6PM - 12AM</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-6 pb-2">
+                                    <div class="btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn btn-outline-secondary" for="btn-check-outlin">
+                                            <i class="fa-solid fa-moon"></i>
+                                            <input type="checkbox" class="btn-check" id="btn-check-outlin"
+                                                autocomplete="off" value="Early Morning">
+                                            <span>12AM - 6AM</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comm">
+                            <h6 class="pt-1">Bus Type</h6>
+                            <div class="row comm-2 pt-1">
+                                <div class="col-3">
+                                    <button class="btn btn-light"><i class="fa-solid fa-snowflake"></i><br>AC</button>
+                                </div>
+                                <div class="col-3 ps-0">
+                                    <button class="btn btn-light"><i
+                                            class="fa-solid fa-snowflake"></i><br>Non/AC</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-light"><i class="fa-solid fa-bed"></i><br>Seater</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-light"><i class="fa-solid fa-bed"></i><br>Sleeper</button>
+                                </div>
+                            </div>
+                        </div><br>
+                        <div class="comm">
+                            <h6>Price Range</h6>
+                            <div class="ps-2 pe-2 pt-2">
+                                <input type="range" class="form-range" min="399" max="2399" value="1200"
+                                    oninput="rangeValue.innerText = this.value">
+                                <p id="rangeValue">1200</p>
+                            </div>
+                        </div>
+                        <div class="comm pb-2">
+                            <select class="form-select" required>
+                                <option>Boarding Points</option>
+                                <option>Ariyalur</option>
+                                <option>Chengalpattu</option>
+                                <option>Chennai</option>
+                                <option>Coimbatore</option>
+                                <option>Cuddalore</option>
+                                <option>Dharamapuri</option>
+                            </select>
+                        </div>
+                        <div class="comm pb-2">
+                            <select class="form-select" required>
+                                <option>Dropping Points</option>
+                                <option>Thiruvanathapuram</option>
+                                <option>Kollam</option>
+                                <option>Pathanamthitta</option>
+                                <option>AlappuZha</option>
+                                <option>Kottayam</option>
+                                <option>Idukki</option>
+                            </select>
+                        </div>
+                        <div class="comm">
+                            <select class="form-select" required>
+                                <option>Amenties</option>
+                                <option>Blanket</option>
+                                <option>Charging Point</option>
+                                <option>Entertainment</option>
+                                <option>Live Tracking</option>
+                                <option>Reading Lamp</option>
+                                <option>Water Bottle</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 filter-right">
+                    <div class="book-head">
+                        <div class="container-fluid book-head-break">
+                            <span>DEPARTURE</span>
+                            <span>AVAILABILITY</span>
+                            <span>FARE</span>
+                        </div>
+                    </div>
+                    <div class="container trip-Information-1">
+                        <div class="bus-details">
+                            <div class="row bus-info border">
+                                <div class="row pt-2">
+                                    <div class="col-9">
+                                        <div class="row">
+                                            <p><span>A/C BharathBenz sleeper</span></p>
+                                        </div>
+                                        <div class="row bus-sec">
+                                            <div class="col-3 left-align">
+                                                <h4>11:57 PM</h4>
+                                            </div>
+                                            <div class="col-6 center-align">
+                                                <span>11:12 hrs
+                                                    <div class="txt-dot"></div>
+                                                </span>
+                                            </div>
+                                            <div class="col-3 right-align">
+                                                <h4>10:15 AM</h4>
+                                            </div>
+                                        </div>
+                                        <div class="row bus-sec">
+                                            <div class="col-6 left-align">Hosur, Krishnagiri</div>
+                                            <div class="col-6 right-align">Kanyakumari Main Block </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="row">
+                                            <div class="col-5"></div>
+                                            <div class="col-7  offer-ribbon">
+                                                <span>Offer
+                                                    <i class="fa-solid fa-indian-rupee-sign"></i>
+                                                    47 per seat
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row pt-1">
+                                            <div class="col-5">
+                                                <span>Only 7 Seats is available</span>
+                                            </div>
+                                            <div class="col-7">
+                                                <span>Per Seat from INR <s style="color: red;">1487</s>
+                                                    <i class="fa-solid fa-indian-rupee-sign"></i>
+                                                    1440 Onwards</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-3 pb-2">
+                                    <div class="col-auto">
+                                        <i class="fa-solid fa-location-dot" style="color: #0f0f10;"></i>
+                                        <i class="fa-solid fa-rug" style="color: #0f0f10;"></i>
+                                        <img width="20" height="20"
+                                            src="https://img.icons8.com/pulsar-line/40/mobile-charger.png"
+                                            alt="mobile-charger" />
+                                        <i class="fa-solid fa-bottle-water" style="color: #0f0f10;"></i>
+                                    </div>
+                                    <div class="bus-dis col butt-hidd pe-3">
+                                        <span><a href="">Amenties</a></span> &#xFF5C;
+                                        <span><a href="">Cancellation Terms</a></span> &#xFF5C;
+                                        <span><a href="">Boarding & Dropping</a></span> &#xFF5C;
+                                        <span><a href="">Via Routes</a></span>
+                                    </div>
+                                    <div class="bus-display col-auto butt-colors">
+                                        <button class="btn btn-sm butt-hide"><a href="">View Seats</a></button>
+                                    </div>
+                                </div>
+                                <div class="hide-seats">
+                                    <div class="txt-dot"></div>
+                                    <div class=" hide-seats-box">
+                                        <div class="row">
+                                            <div class="col-7 seat-container">
+                                                <div class="inside-seat-container">
+                                                    <div class="upper-seat">
+                                                        <div class="upper-layers">
+                                                            <div class="d-flex">
+                                                                <div class="col-auto pt-2">
+                                                                    <p class="vertical-text">Upper</p>
+                                                                </div>
+                                                                <div class="col p-0 upper-layer-seats">
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U1</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U3</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U5</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U7</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U9</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U11</div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U2</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U4</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U6</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U8</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U10</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U12</div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="sleeper-lay-search">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search">&nbsp;</div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U13</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U14</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U15</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U16</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U17</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U18</div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="lower-seat">
+                                                        <div class="lower-layers">
+                                                            <div class="d-flex">
+                                                                <div class="col-auto pt-2">
+                                                                    <img width="20" height="20"
+                                                                        src="https://img.icons8.com/ios/40/steering-wheel.png"
+                                                                        alt="steering-wheel" />
+                                                                    <div>&nbsp;</div>
+                                                                    <p class="vertical-text">Lower</p>
+                                                                </div>
+                                                                <div class="col p-0 lower-layer-seats">
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        L1</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        L3</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        L5</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        L7</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        L9</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        L11</div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        L2</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        L4</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        L6</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        L8</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        L10</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        L12</div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="sleeper-lay-search">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search">&nbsp;</div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        1</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        2</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        3</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        4</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        5</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        6</div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="seat-legends">
+                                                        <div class="seat-leg-layer pt-3 pb-2 mb-2">
+                                                            <div class="px-2">
+                                                                <div class="seat-select-all seat-lay-details"></div>
+                                                                <span class="aligning px-1">Available</span>
+                                                            </div>
+                                                            <div class="px-2">
+                                                                <div class="seat-selected seat-lay-details"></div>
+                                                                <span class="aligning px-1">Selected</span>
+                                                            </div>
+                                                            <div class="px-2">
+                                                                <div class="seat-select-male seat-lay-details"></div>
+                                                                <span class="aligning px-1">Male</span>
+                                                            </div>
+                                                            <div class="px-2">
+                                                                <div class="seat-select-female seat-lay-details"></div>
+                                                                <span class="aligning px-1">Female</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-5 pt-3">
+                                                <div class="Terms-policy">
+                                                    <h5>Service Notes</h5>
+                                                    <ul>
+                                                        <li>Passengers are required to report 15 minutes in advance</li>
+                                                    </ul>
+                                                    <h5>Travel Policies</h5>
+                                                    <ul>
+                                                        <li>Above 4years child need to take full ticket</li>
+                                                        <li>Liquor Drunk passenger not allowed to board in the bus</li>
+                                                        <li>Pets are not allowed</li>
+                                                        <li>Excess Luggage will be be chargeble</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="Amount-details pt-1">
+                                                    <h5>Seat Fare Details:</h5>
+                                                    <div class="seat-fare-details">
+                                                        <div class="row">
+                                                            <div class="col">Seat(s):</div>
+                                                            <div class="col">1</div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">Fare:</div>
+                                                            <div class="col">
+                                                                <span><i class="fa-solid fa-indian-rupee-sign fa-xs"
+                                                                        style="color: #0a0a0a;"></i> 1440</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">Discount:</div>
+                                                            <div class="col">
+                                                                <span><i class="fa-solid fa-indian-rupee-sign fa-xs"
+                                                                        style="color: #0a0a0a;"></i> 28</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">GST:</div>
+                                                            <div class="col">
+                                                                <span><i class="fa-solid fa-indian-rupee-sign fa-xs"
+                                                                        style="color: #0a0a0a;"></i> 27</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">Total:</div>
+                                                            <div class="col">
+                                                                <span><i class="fa-solid fa-indian-rupee-sign fa-xs"
+                                                                        style="color: #0a0a0a;"></i> 1439</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="next-continue pt-1 pb-2 butt-hidd-5">
+                                                        <button class="btn btn-warning">
+                                                            <a href="./TicketDetails-1.html">Continue</a>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container trip-Information-2">
+                        <div class="bus-details">
+                            <div class="row bus-info border">
+                                <div class="row pt-2">
+                                    <div class="col-9">
+                                        <div class="row">
+                                            <p><span> Non A/C Seater/sleeper</span></p>
+                                        </div>
+                                        <div class="row bus-sec">
+                                            <div class="col-3 left-align">
+                                                <h4>05:10 AM</h4>
+                                            </div>
+                                            <div class="col-6 center-align">
+                                                <span>08:00 hrs
+                                                    <div class="txt-dot"></div>
+                                                </span>
+                                            </div>
+                                            <div class="col-3 right-align">
+                                                <h4>05:10 PM</h4>
+                                            </div>
+                                        </div>
+                                        <div class="row bus-sec">
+                                            <div class="col-6 left-align">Kilambakkam(KCBT), Chennai</div>
+                                            <div class="col-6 right-align">Rasipuram, Namakkal</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="row">
+                                            <div class="col-5"></div>
+                                            <div class="col-7  offer-ribbon">
+                                                <span>Offer
+                                                    <i class="fa-solid fa-indian-rupee-sign"></i>
+                                                    19 per seat
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row pt-1">
+                                            <div class="col-5">
+                                                <span>Only 10 Seats is available</span>
+                                            </div>
+                                            <div class="col-7">
+                                                <span>Per Seat from INR <s style="color: red;">735</s>
+                                                    <i class="fa-solid fa-indian-rupee-sign"></i>
+                                                    716 Onwards</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-3 pb-2">
+                                    <div class="col-auto">
+                                        <img width="20" height="20"
+                                            src="https://img.icons8.com/pulsar-line/40/mobile-charger.png"
+                                            alt="mobile-charger" />
+                                        <i class="fa-solid fa-bottle-water" style="color: #0f0f10;"></i>
+                                    </div>
+                                    <div class="bus-dis col butt-hidd pe-3">
+                                        <span><a href="">Amenties</a></span> &#xFF5C;
+                                        <span><a href="">Boarding & Dropping</a></span> &#xFF5C;
+                                        <span><a href="">Via Routes</a></span>
+                                    </div>
+                                    <div class="bus-display col-auto butt-colors">
+                                        <button class="btn btn-sm butt-hide"><a href="">View Seats</a></button>
+                                    </div>
+                                </div>
+                                <div class="hide-seats">
+                                    <div class="txt-dot"></div>
+                                    <div class=" hide-seats-box">
+                                        <div class="row">
+                                            <div class="col-7 seat-container">
+                                                <div class="inside-seat-container">
+                                                    <div class="upper-seat">
+                                                        <div class="upper-layers">
+                                                            <div class="d-flex">
+                                                                <div class="col-auto pt-2">
+                                                                    <p class="vertical-text">Upper</p>
+                                                                </div>
+                                                                <div class="col p-0 upper-layer-seats">
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U1</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U3</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U5</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U7</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U9</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U11</div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U2</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U4</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U6</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U8</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U10</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U12</div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="sleeper-lay-search">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search">&nbsp;</div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U13</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U14</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U15</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U16</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U17</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        U18</div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="lower-seat">
+                                                        <div class="lower-layers">
+                                                            <div class="d-flex">
+                                                                <div class="col-auto pt-2">
+                                                                    <img width="20" height="20"
+                                                                        src="https://img.icons8.com/ios/40/steering-wheel.png"
+                                                                        alt="steering-wheel" />
+                                                                    <div>&nbsp;</div>
+                                                                    <p class="vertical-text">Lower</p>
+                                                                </div>
+                                                                <div class="col p-0 lower-layer-seats">
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        L1</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        L3</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        L5</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        L7</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        L9</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        L11</div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        L2</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        L4</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        L6</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        L8</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        L10</div>
+                                                                    <div
+                                                                        class="sleeper-lay-search seat-select-visibility">
+                                                                        L12</div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="sleeper-lay-search">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search">&nbsp;</div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="straight-line">
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            1</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            2</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            3</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            4</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            5</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            6</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            7</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            8</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            9</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            10</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            11</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            12</div>
+                                                                    </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="seat-legends">
+                                                        <div class="seat-leg-layer pt-3 pb-2 mb-2">
+                                                            <div class="px-2">
+                                                                <div class="seat-select-all seat-lay-details"></div>
+                                                                <span class="aligning px-1">Available</span>
+                                                            </div>
+                                                            <div class="px-2">
+                                                                <div class="seat-selected seat-lay-details"></div>
+                                                                <span class="aligning px-1">Selected</span>
+                                                            </div>
+                                                            <div class="px-2">
+                                                                <div class="seat-select-male seat-lay-details"></div>
+                                                                <span class="aligning px-1">Male</span>
+                                                            </div>
+                                                            <div class="px-2">
+                                                                <div class="seat-select-female seat-lay-details"></div>
+                                                                <span class="aligning px-1">Female</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-5 pt-3">
+                                                <div class="Terms-policy">
+                                                    <h5>Service Notes</h5>
+                                                    <ul>
+                                                        <li>Passengers are required to report 15 minutes in advance</li>
+                                                    </ul>
+                                                    <h5>Travel Policies</h5>
+                                                    <ul>
+                                                        <li>Above 4years child need to take full ticket</li>
+                                                        <li>Liquor Drunk passenger not allowed to board in the bus</li>
+                                                        <li>Pets are not allowed</li>
+                                                        <li>Excess Luggage will be be chargeble</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="Amount-details pt-1">
+                                                    <h5>Seat Fare Details:</h5>
+                                                    <div class="seat-fare-details">
+                                                        <div class="row">
+                                                            <div class="col">Seat(s):</div>
+                                                            <div class="col">1</div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">Fare:</div>
+                                                            <div class="col">
+                                                                <span><i class="fa-solid fa-indian-rupee-sign fa-xs"
+                                                                        style="color: #0a0a0a;"></i> 716</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">Discount:</div>
+                                                            <div class="col">
+                                                                <span><i class="fa-solid fa-indian-rupee-sign fa-xs"
+                                                                        style="color: #0a0a0a;"></i> 19</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">GST:</div>
+                                                            <div class="col">
+                                                                <span><i class="fa-solid fa-indian-rupee-sign fa-xs"
+                                                                        style="color: #0a0a0a;"></i> 18</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">Total:</div>
+                                                            <div class="col">
+                                                                <span><i class="fa-solid fa-indian-rupee-sign fa-xs"
+                                                                        style="color: #0a0a0a;"></i> 679</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="next-continue pt-1 pb-2 butt-hidd-5">
+                                                        <button class="btn btn-warning">
+                                                            <a href="./TicketDetails.html">Continue</a>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container trip-Information-3">
+                        <div class="bus-details">
+                            <div class="row bus-info border">
+                                <div class="row pt-2">
+                                    <div class="col-9">
+                                        <div class="row">
+                                            <p><span>Semi-Sleeper</span></p>
+                                        </div>
+                                        <div class="row bus-sec">
+                                            <div class="col-3 left-align">
+                                                <h4>08:50 PM</h4>
+                                            </div>
+                                            <div class="col-6 center-align">
+                                                <span>07:40 hrs
+                                                    <div class="txt-dot"></div>
+                                                </span>
+                                            </div>
+                                            <div class="col-3 right-align">
+                                                <h4>03:30 AM</h4>
+                                            </div>
+                                        </div>
+                                        <div class="row bus-sec">
+                                            <div class="col-6 left-align">KSR Layout, Bangalore</div>
+                                            <div class="col-6 right-align">Trichy Bus Stand</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="row">
+                                            <div class="col-5"></div>
+                                            <div class="col-7  offer-ribbon">
+                                                <span>Offer
+                                                    <i class="fa-solid fa-indian-rupee-sign"></i>
+                                                    23 per seat
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row pt-1">
+                                            <div class="col-5">
+                                                <span>Only 2 Seats is available</span>
+                                            </div>
+                                            <div class="col-7">
+                                                <span>Per Seat from INR <s style="color: red;">999</s>
+                                                    <i class="fa-solid fa-indian-rupee-sign"></i>
+                                                    976 Onwards</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-3 pb-2">
+                                    <div class="col-auto">
+                                    </div>
+                                    <div class="bus-dis col butt-hidd pe-3">
+                                        <span><a href="">Amenties</a></span> &#xFF5C;
+                                        <span><a href="">Cancellation Terms</a></span> &#xFF5C;
+                                        <span><a href="">Boarding & Dropping</a></span> &#xFF5C;
+                                        <span><a href="">Via Routes</a></span>
+                                    </div>
+                                    <div class="bus-display col-auto butt-colors">
+                                        <button class="btn btn-sm butt-hide"><a href="">View Seats</a></button>
+                                    </div>
+                                </div>
+                                <div class="hide-seats">
+                                    <div class="txt-dot"></div>
+                                    <div class=" hide-seats-box">
+                                        <div class="row">
+                                            <div class="col-7 seat-container">
+                                                <div class="inside-seat-container">
+                                                    <div class="upper-seat">
+                                                        <div class="upper-layers">
+                                                            <div class="d-flex">
+                                                                <div class="col-auto pt-2">
+                                                                    <p class="vertical-text">Upper</p>
+                                                                </div>
+                                                                <div class="col p-0 upper-layer-seats">
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U1</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U2</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U3</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U4</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U5</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U6</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U7</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U8</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U9</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U10</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U11</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U12</div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U13</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U14</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U15</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U16</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U17</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U18</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U19</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U20</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U21</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U22</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U23</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U24</div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U25</div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U37</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U36</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U35</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U34</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U33</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U32</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U31</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U30</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U29</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U28</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U27</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U26</div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="lower-seat">
+                                                        <div class="lower-layers">
+                                                            <div class="d-flex">
+                                                                <div class="col-auto pt-2">
+                                                                    <img width="20" height="20"
+                                                                        src="https://img.icons8.com/ios/40/steering-wheel.png"
+                                                                        alt="steering-wheel" />
+                                                                    <div>&nbsp;</div>
+                                                                    <p class="vertical-text">Lower</p>
+                                                                </div>
+                                                                <div class="col p-0 lower-layer-seats">
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L1</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L2</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L3</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L4</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L5</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L6</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L7</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L8</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L9</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L10</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L11</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L12</div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L13</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L14</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L15</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L16</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L17</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L18</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L19</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L20</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L21</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L22</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L23</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L24</div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L25</div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="straight-line">
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            L37</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            L36</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            L35</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            L34</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            L33</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            L32</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            L31</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            L30</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            L29</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            L28</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            L27</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            L26</div>
+                                                                    </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="seat-legends">
+                                                        <div class="seat-leg-layer pt-3 pb-2 mb-2">
+                                                            <div class="px-2">
+                                                                <div class="seat-select-all seat-lay-details"></div>
+                                                                <span class="aligning px-1">Available</span>
+                                                            </div>
+                                                            <div class="px-2">
+                                                                <div class="seat-selected seat-lay-details"></div>
+                                                                <span class="aligning px-1">Selected</span>
+                                                            </div>
+                                                            <div class="px-2">
+                                                                <div class="seat-select-male seat-lay-details"></div>
+                                                                <span class="aligning px-1">Male</span>
+                                                            </div>
+                                                            <div class="px-2">
+                                                                <div class="seat-select-female seat-lay-details"></div>
+                                                                <span class="aligning px-1">Female</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-5 pt-3">
+                                                <div class="Terms-policy">
+                                                    <h5>Service Notes</h5>
+                                                    <ul>
+                                                        <li>Passengers are required to report 15 minutes in advance</li>
+                                                    </ul>
+                                                    <h5>Travel Policies</h5>
+                                                    <ul>
+                                                        <li>Above 4years child need to take full ticket</li>
+                                                        <li>Liquor Drunk passenger not allowed to board in the bus</li>
+                                                        <li>Pets are not allowed</li>
+                                                        <li>Excess Luggage will be be chargeble</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="Amount-details pt-1">
+                                                    <h5>Seat Fare Details:</h5>
+                                                    <div class="seat-fare-details">
+                                                        <div class="row">
+                                                            <div class="col">Seat(s):</div>
+                                                            <div class="col">1</div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">Fare:</div>
+                                                            <div class="col">
+                                                                <span><i class="fa-solid fa-indian-rupee-sign fa-xs"
+                                                                        style="color: #0a0a0a;"></i> 976</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">Discount:</div>
+                                                            <div class="col">
+                                                                <span><i class="fa-solid fa-indian-rupee-sign fa-xs"
+                                                                        style="color: #0a0a0a;"></i> 21</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">GST:</div>
+                                                            <div class="col">
+                                                                <span><i class="fa-solid fa-indian-rupee-sign fa-xs"
+                                                                        style="color: #0a0a0a;"></i> 20</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">Total:</div>
+                                                            <div class="col">
+                                                                <span><i class="fa-solid fa-indian-rupee-sign fa-xs"
+                                                                        style="color: #0a0a0a;"></i> 975</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="next-continue pt-1 pb-2 butt-hidd-5">
+                                                        <button class="btn btn-warning">
+                                                            <a href="./TicketDetails.html">Continue</a>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container trip-Information-4">
+                        <div class="bus-details">
+                            <div class="row bus-info border">
+                                <div class="row pt-2">
+                                    <div class="col-9">
+                                        <div class="row">
+                                            <p><span>Only Seater</span></p>
+                                        </div>
+                                        <div class="row bus-sec">
+                                            <div class="col-3 left-align">
+                                                <h4>11:59 PM</h4>
+                                            </div>
+                                            <div class="col-6 center-align">
+                                                <span>05:01 hrs
+                                                    <div class="txt-dot"></div>
+                                                </span>
+                                            </div>
+                                            <div class="col-3 right-align">
+                                                <h4>05:00 AM</h4>
+                                            </div>
+                                        </div>
+                                        <div class="row bus-sec">
+                                            <div class="col-6 left-align">Salem Main Road</div>
+                                            <div class="col-6 right-align">Coimbatore Road</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="row">
+                                            <div class="col-5"></div>
+                                            <div class="col-7  offer-ribbon">
+                                                <span>Offer
+                                                    <i class="fa-solid fa-indian-rupee-sign"></i>
+                                                    29 per seat
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row pt-1">
+                                            <div class="col-5">
+                                                <span>Only 5 Seats is available</span>
+                                            </div>
+                                            <div class="col-7">
+                                                <span>Per Seat from INR <s style="color: red;">528</s>
+                                                    <i class="fa-solid fa-indian-rupee-sign"></i>
+                                                    499 Onwards</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-3 pb-2">
+                                    <div class="col-auto">
+                                    </div>
+                                    <div class="bus-dis col butt-hidd pe-3">
+                                        <span><a href="">Cancellation Terms</a></span> &#xFF5C;
+                                        <span><a href="">Boarding & Dropping</a></span> &#xFF5C;
+                                        <span><a href="">Via Routes</a></span>
+                                    </div>
+                                    <div class="bus-display col-auto butt-colors">
+                                        <button class="btn btn-sm butt-hide"><a href="">View Seats</a></button>
+                                    </div>
+                                </div>
+                                <div class="hide-seats">
+                                    <div class="txt-dot"></div>
+                                    <div class=" hide-seats-box">
+                                        <div class="row">
+                                            <div class="col-7 seat-container">
+                                                <div class="inside-seat-container">
+                                                    <div class="upper-seat">
+                                                        <div class="upper-layers">
+                                                            <div class="d-flex">
+                                                                <div class="col-auto pt-2">
+                                                                    <p class="vertical-text">Upper</p>
+                                                                </div>
+                                                                <div class="col p-0 upper-layer-seats">
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U1</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U2</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U3</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U4</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U5</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U6</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U7</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U8</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U9</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U10</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U11</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U12</div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U13</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U14</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U15</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U16</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U17</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U18</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U19</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U20</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U21</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U22</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U23</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        U24</div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        13</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        14</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        15</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        16</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        17</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        18</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        19</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        20</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        21</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        22</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        23</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        24</div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="lower-seat">
+                                                        <div class="lower-layers">
+                                                            <div class="d-flex">
+                                                                <div class="col-auto pt-2">
+                                                                    <img width="20" height="20"
+                                                                        src="https://img.icons8.com/ios/40/steering-wheel.png"
+                                                                        alt="steering-wheel" />
+                                                                    <div>&nbsp;</div>
+                                                                    <p class="vertical-text">Lower</p>
+                                                                </div>
+                                                                <div class="col p-0 lower-layer-seats">
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L1</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L2</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L3</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L4</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L5</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L6</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L7</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L8</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L9</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L10</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L11</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L12</div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L13</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L14</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L15</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L16</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L17</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L18</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L19</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L20</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L21</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L22</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L23</div>
+                                                                    <div class="sleeper-lay-search-low seat-select-low">
+                                                                        L24</div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="sleeper-lay-search-low">&nbsp;</div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="straight-line">
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            1</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            2</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            3</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            4</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            5</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            6</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            7</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            8</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            9</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            10</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            11</div>
+                                                                        <div
+                                                                            class="sleeper-lay-search-low seat-select-low">
+                                                                            12</div>
+                                                                    </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="seat-legends">
+                                                        <div class="seat-leg-layer pt-3 pb-2 mb-2">
+                                                            <div class="px-2">
+                                                                <div class="seat-select-all seat-lay-details"></div>
+                                                                <span class="aligning px-1">Available</span>
+                                                            </div>
+                                                            <div class="px-2">
+                                                                <div class="seat-selected seat-lay-details"></div>
+                                                                <span class="aligning px-1">Selected</span>
+                                                            </div>
+                                                            <div class="px-2">
+                                                                <div class="seat-select-male seat-lay-details"></div>
+                                                                <span class="aligning px-1">Male</span>
+                                                            </div>
+                                                            <div class="px-2">
+                                                                <div class="seat-select-female seat-lay-details"></div>
+                                                                <span class="aligning px-1">Female</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-5 pt-3">
+                                                <div class="Terms-policy">
+                                                    <h5>Service Notes</h5>
+                                                    <ul>
+                                                        <li>Passengers are required to report 15 minutes in advance</li>
+                                                    </ul>
+                                                    <h5>Travel Policies</h5>
+                                                    <ul>
+                                                        <li>Above 4years child need to take full ticket</li>
+                                                        <li>Liquor Drunk passenger not allowed to board in the bus</li>
+                                                        <li>Pets are not allowed</li>
+                                                        <li>Excess Luggage will be be chargeble</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="Amount-details pt-1">
+                                                    <h5>Seat Fare Details:</h5>
+                                                    <div class="seat-fare-details">
+                                                        <div class="row">
+                                                            <div class="col">Seat(s):</div>
+                                                            <div class="col">1</div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">Fare:</div>
+                                                            <div class="col">
+                                                                <span><i class="fa-solid fa-indian-rupee-sign fa-xs"
+                                                                        style="color: #0a0a0a;"></i> 449</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">Discount:</div>
+                                                            <div class="col">
+                                                                <span><i class="fa-solid fa-indian-rupee-sign fa-xs"
+                                                                        style="color: #0a0a0a;"></i> 25</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">GST:</div>
+                                                            <div class="col">
+                                                                <span><i class="fa-solid fa-indian-rupee-sign fa-xs"
+                                                                        style="color: #0a0a0a;"></i> 24</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">Total:</div>
+                                                            <div class="col">
+                                                                <span><i class="fa-solid fa-indian-rupee-sign fa-xs"
+                                                                        style="color: #0a0a0a;"></i> 448</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="next-continue pt-1 pb-2 butt-hidd-5">
+                                                        <button class="btn btn-warning">
+                                                            <a href="./TicketDetails.html">Continue</a>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-------- Content Section End ------->
+    <!---------- Footer Start ------------>
+    <footer class="footer-section">
+        <!--------- Footer Top Start ----------->
+        <div class="container footer-top">
+            <div class="row">
+                <div class="col-md col-lg">
+                    <img src="./Assets/images/Logo Nandha.png" alt="Logo" width="170" height="40">
+                    <br>
+                    <br>
+                    <p class="text"> Nandha travels bus tickets online in website and from your mobile with few easy
+                        steps.<br>
+                        Go to <strong>My Bookings</strong> to manage your account.
+                    </p>
+                </div>
+                <div class="col-md col-lg">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Boarding Places</a></li>
+                        <li><a href="#">Franchise Login</a></li>
+                    </ul>
+                </div>
+                <div class="col-md col-lg">
+                    <h5>Manage Tickets</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Download Tickets</a></li>
+                        <li><a href="#">Track My Bus</a></li>
+                        <li><a href="#">Cancel Tickets</a></li>
+                        <li><a href="#">Change Boarding Point</a></li>
+                        <li><a href="#">Change Travel Date</a></li>
+                    </ul>
+                </div>
+                <div class="col-md col-lg footernum">
+                    <h5>Head Office</h5>
+                    <p>254, 2nd Street, Near Crosscut <br>
+                        Signal,Gandhipuram,<br>
+                        Coimbatore - 641 012.<br>
+                        <a href="#">9344062552</a>
+                    </p>
+                </div>
+                <div class="col-md col-lg">
+                    <h5>Get In Touch</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">0111-2222222</a></li>
+                        <li><a href="#">1000-3333333</a></li>
+                        <li><a href="#">vrgnvn4ncj4657@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!----------- Footer Top End -------->
+        <hr>
+        <!----------- Footer Bottom Start -------->
+        <div class="container-fluid footer-bottom">
+            <div class="row justify-content-between ps-5 pe-5">
+                <p class="col-sm-auto">Copyright © 2024 -Nandha Travels</p>
+                <p class="col-sm-auto">Powered By
+                    <a href="#" target="_blank">Nandha Solutions</a>
+                </p>
+            </div>
+        </div>
+        <!---------- Footer Bottom End ------->
+    </footer>
+    <!----------- Footer End ----------->
+</body>
+
+</html>
